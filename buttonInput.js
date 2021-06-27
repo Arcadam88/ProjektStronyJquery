@@ -29,3 +29,12 @@ $(document).ready(function()
         $("#placeholder").fadeIn(500); 
     });
 });
+
+$(document).ready(function()
+{
+    $("#dropdownButton").click(function()
+    {
+        $("#dropdown").fadeToggle(200);
+        $("#dropdown").animate ({top: "9%"})
+    });
+});
