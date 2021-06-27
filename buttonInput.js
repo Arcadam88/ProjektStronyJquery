@@ -3,6 +3,15 @@ $(document).ready(function()
     $("#artButton").click(function()
     {
     $("#dlc").fadeIn(500);
-    $("")
-    });
+    $("#info").fadeOut(500);
+    $("#info").fadeOut(500);
+    $("#info").fadeOut(500);
+    }),
+    $("#infoButton").click(function()
+    {
+        $("#dlc").fadeOut(500);
+        $("#info").fadeIn(500);
+        $("#placeholder").fadeOut(500);
+        $("#placeholder").fadeOut(500);        
+    })
 });
