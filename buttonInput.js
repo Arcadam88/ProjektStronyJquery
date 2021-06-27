@@ -13,5 +13,19 @@ $(document).ready(function()
         $("#info").fadeIn(500);
         $("#placeholder").fadeOut(500);
         $("#placeholder").fadeOut(500);        
-    })
+    }),
+    $("#placeholderButton").click(function()
+    {
+        $("#dlc").fadeOut(500);
+        $("#info").fadeOut(500);
+        $("#placeholder").fadeIn(500);
+        $("#placeholder").fadeOut(500); 
+    }),
+    $("#placeholderButton2").click(function()
+    {
+        $("#dlc").fadeOut(500);
+        $("#info").fadeOut(500);
+        $("#placeholder").fadeOut(500);
+        $("#placeholder").fadeIn(500); 
+    });
 });
