@@ -1,9 +1,9 @@
-$(document).ready(function()
+$(document).ready(function() //kiedy dokument będzie gotowy, załadowany funkcja może zostać załadowana
 {
-    $("#artButton").click(function()
+    $("#artButton").click(function() //pierwszy przycisk
     {
-    $("#dlc").fadeIn(500);
-    $("#info").fadeOut(500);
+    $("#dlc").fadeIn(500); //wyświetla okno z elementem o id DLC
+    $("#info").fadeOut(500); //ukrywa okno z elementem o id info
     $("#info").fadeOut(500);
     $("#info").fadeOut(500);
     }),
@@ -29,7 +29,7 @@ $(document).ready(function()
         $("#placeholder").fadeIn(500); 
     });
 });
-
+/* //deprecated (Element wasn't responsive as the rest of the website (replaced with bootstrap))
 $(document).ready(function()
 {
     $("#dropdownButton").click(function()
@@ -38,3 +38,4 @@ $(document).ready(function()
         $("#dropdown").animate ({top: "9%"})
     });
 });
+*/
