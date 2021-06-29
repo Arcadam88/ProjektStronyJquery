@@ -8,3 +8,19 @@ z-index: 1;
 margin-top: auto;
 margin-left: -12px;
 }
+#scrollUp
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.aboutGame
+{
+    font-size: 30px;
+}

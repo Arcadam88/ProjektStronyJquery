@@ -1,34 +1,30 @@
 $(document).ready(function() //kiedy dokument będzie gotowy, załadowany funkcja może zostać załadowana
 {
-    $("#artButton").click(function() //pierwszy przycisk
+    $("#dlcButton").click(function()
     {
     $("#dlc").fadeIn(500); //wyświetla okno z elementem o id DLC
-    $("#info").fadeOut(500); //ukrywa okno z elementem o id info
-    $("#info").fadeOut(500);
-    $("#info").fadeOut(500);
+    $("#info, #picture").fadeOut(500); //ukrywa okno z elementem o id info
     }),
     $("#infoButton").click(function()
     {
-        $("#dlc").fadeOut(500);
-        $("#info").fadeIn(500);
-        $("#placeholder").fadeOut(500);
-        $("#placeholder").fadeOut(500);        
+        $("#dlc, #pictures").fadeOut(500);
+        $("#info").fadeIn(500);       
     }),
-    $("#placeholderButton").click(function()
+    $("#pictureButton").click(function()
     {
-        $("#dlc").fadeOut(500);
-        $("#info").fadeOut(500);
-        $("#placeholder").fadeIn(500);
-        $("#placeholder").fadeOut(500); 
-    }),
-    $("#placeholderButton2").click(function()
-    {
-        $("#dlc").fadeOut(500);
-        $("#info").fadeOut(500);
-        $("#placeholder").fadeOut(500);
-        $("#placeholder").fadeIn(500); 
+        $("#dlc, #info").fadeOut(500);
+        $("#picture").fadeIn(500);
     });
 });
+
+$(document).ready(function()
+{
+    $("#scrollUp").click(function()
+    {
+        $(window).scrollTop(0,0);
+    });
+});
+
 /* //deprecated (Element wasn't responsive as the rest of the website (replaced with bootstrap))
 $(document).ready(function()
 {
