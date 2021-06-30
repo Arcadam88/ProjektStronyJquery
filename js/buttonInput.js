@@ -7,7 +7,7 @@ $(document).ready(function() //kiedy dokument będzie gotowy, załadowany funkcj
     }),
     $("#infoButton").click(function()
     {
-        $("#dlc, #pictures").fadeOut(500);
+        $("#dlc, #picture").fadeOut(500);
         $("#info").fadeIn(500);       
     }),
     $("#pictureButton").click(function()
@@ -22,6 +22,14 @@ $(document).ready(function()
     $("#scrollUp").click(function()
     {
         $(window).scrollTop(0,0);
+    });
+});
+
+$(document).ready(function()
+{
+    $("#scrollUp").mouseover(function()
+    {
+        $("#scrollUp").animate({height: "5%"}, 200, 'linear');
     });
 });
 
