@@ -44,3 +44,8 @@ filter: invert(1);
 {
     font-size: 40px;
 }
+#dlcButton:hover
+{
+    padding: 1% !important;
+    transition: 0.5s;
+}

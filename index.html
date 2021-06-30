@@ -4,44 +4,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Projekt Strony jquery</title>
-        
+        <link rel="stylesheet" href="css/website.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/website.css">
+        
         <script src="js/buttonInput.js"></script>
         <meta name="author" content="Bartosz Skrzydelski">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     </head>
     <body id="body" class="bg-dark">
         
-        <div class="container-fluid">
-        <div class="jumbotron bg-primary d-flex justify-content-center">
-        <div class="btn-group">
-        <button id="dropdownButton" class="dropdown-toggle btn-lg border text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-controller"></i></button>
-        <div class="bg-dark text-white dropdown-menu border rounder border-light">
-        <a class="bg-dark text-white dropdown-item" href="subPage/subPage_csgo.html">CSGO</a>
-        <a class="bg-dark text-white dropdown-item" href="subPage/subPage_deadbydaylight.html">Dead by Daylight</a>
+        <div class="container-fluid border rounded bg-dark">
+        <div class="jumbotron bg-dark d-flex w-100 justify-content-center h-100 p-3">
+        <div class="btn-group w-100">
+        <button id="dropdownButton" class="btn w-25 dropdown-toggle btn-lg border text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-controller"></i></button>
+        <div class="bg-dark text-white w-25 dropdown-menu border rounder border-light">
+        <a class="bg-dark text-white h5 dropdown-item" href="subPage/subPage_csgo.html">Counter Strike: Global Offensive</a>
+        <a class="bg-dark text-white h5 dropdown-item" href="subPage/subPage_deadbydaylight.html">Dead by Daylight</a>
         </div>
-         </div>
-         <button id="infoButton" class="btn-lg border text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden btn"><i class="bi bi-info-circle"></i></button>
-         <button id="dlcButton" class="btn-lg border text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden btn"><i class="bi bi-box"></i></button>
-         <button id="pictureButton" class="btn-lg border text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden btn"><i class="bi bi-image"></i></button>
-    
+         
+         <button id="infoButton" class="btn btn-lg border w-25 text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden "><i class="bi bi-info-circle"></i></button>
+         <button id="dlcButton" class="btn btn-lg border  w-25     text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden "><i class="bi bi-box"></i></button>
+         <button id="pictureButton" class="btn btn-lg border w-25   text-white rounded pl-3 pr-3 p-2 m-1 d-inline bg-dark overflow-hidden "><i class="bi bi-image"></i></button>
+    </div>
     
         </div>
         
-        <div class="jumbotron bg-secondary box-shadow p-3">
+        <div class="jumbotron bg-dark box-shadow p-3">
         <div id="info">
-        <div class="bg-secondary ml-1 w-100  row">
+        <div class="bg-dark ml-1 w-100  row">
             <img class="w-50 h-50 col-sm" id="logo" src="image/csgo/image_csgologo.png">
            <p class="aboutGame text-white col-sm">Counter-Strike: Global Offensive (CS: GO) poszerzy doświadczenie w rozgrywce drużynowej akcji, której seria ta utorowała drogę u swojego początku 12 lat temu. CS: GO zawiera nowe mapy, postacie i rodzaje broni oraz dostarcza zaktualizowane wersje klasycznej zawartości CS (de_dust2 itd.). 
            </p>
            </div>
            
-               <div class="carousel slide float-left w-100 container mt-1 border border-dark rounded p-3 bg-dark jumbotron-fluid" id="controls" data-ride="carousel">
+               <div class="carousel slide w-75 container mt-1 border border-dark rounded p-3 bg-dark jumbotron-fluid" id="controls" data-ride="carousel">
                    <div class="carousel-inner">
                        <div class="carousel-item active">
                         <div class=" bg-dark embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="1381" height="480" src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
