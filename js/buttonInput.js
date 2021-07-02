@@ -33,6 +33,30 @@ $(document).ready(function()
     });
 });
 
+/*
+$(document).ready(function()
+{
+    $("#menu").click(function()
+    {
+        $(".btn-group").animate({opacity: "hide", right: "100%"},"linear");
+    },
+    
+    $("#menu").click(function()
+    {
+        $(".btn-group").animate({opacity: "0", right: "0%"}, "linear");
+    }));
+});
+*/
+
+$(document).ready(function()
+{
+    $("#menu").click(function()
+    {
+        $(".btn-group").slideToggle(300);
+    });
+});
+
+
 /* //deprecated (Element wasn't responsive as the rest of the website (replaced with bootstrap))
 $(document).ready(function()
 {

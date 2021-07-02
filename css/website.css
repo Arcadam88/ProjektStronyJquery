@@ -38,14 +38,29 @@ filter: invert(1);
 }
 .button-lg:hover
 {
-    padding: 10%;
+    padding: 10% !important;
 }
 #review
 {
     font-size: 40px;
 }
-#dlcButton:hover
+
+#dlcButton, #pictureButton, #dropdownButton, #infoButton
 {
-    padding: 1% !important;
     transition: 0.5s;
+}
+#dlcButton:hover, #pictureButton:hover, #dropdownButton:hover, #infoButton:hover
+{
+    padding: 2% !important;
+    transition: 0.5s;
+}
+#menu
+{
+    height: 1%;
+    width: 5%;
+    
+}
+.bi-list
+{
+    filter: invert(1) !important;
 }
