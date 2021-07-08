@@ -12,7 +12,7 @@ $(document).ready(function() //kiedy dokument będzie gotowy, załadowany funkcj
     }),
     $("#pictureButton").click(function()
     {
-        $("#dlc, #info").fadeOut(500);
+        $("#dlc, #dlcText, #info").fadeOut(500);
         $("#picture").fadeIn(500);
     });
 });
