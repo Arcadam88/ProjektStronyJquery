@@ -50,6 +50,9 @@ $(document).ready(function()
 
 $(document).ready(function()
 {
+    {
+       $(".btn-group").hide(); 
+    }
     $("#menu").click(function()
     {
         $(".btn-group").slideToggle(300);
