@@ -33,6 +33,42 @@ $(document).ready(function()
     });
 });
 
+$(document).ready(function()
+{
+    $("#csgoHtml").click(function()
+    {
+        window.location = 'subPage/subPage_csgo.html';
+    });
+});
+
+$(document).ready(function()
+{
+    $("#dbdHtml").click(function()
+    {
+        window.location = 'subPage/subPage_dbd.html';
+    });
+});
+
+
+$(document).ready(function()
+{
+    {
+       $(".btn-group").hide(); 
+    }
+    $("#menu").click(function()
+    {
+        $(".btn-group").slideToggle(300);
+    });
+});
+$(document).ready(function()
+{
+    $(".container-fluid").hide(); 
+{
+    $(".container-fluid").fadeIn(2000);
+}
+});
+
+
 /*
 $(document).ready(function()
 {
@@ -47,17 +83,6 @@ $(document).ready(function()
     }));
 });
 */
-
-$(document).ready(function()
-{
-    {
-       $(".btn-group").hide(); 
-    }
-    $("#menu").click(function()
-    {
-        $(".btn-group").slideToggle(300);
-    });
-});
 
 
 /* //deprecated (Element wasn't responsive as the rest of the website (replaced with bootstrap))

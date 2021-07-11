@@ -64,3 +64,13 @@ filter: invert(1);
 {
     filter: invert(1) !important;
 }
+.imgText
+{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.pointer
+{
+    cursor: pointer;
+}
