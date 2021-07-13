@@ -60,15 +60,79 @@ $(document).ready(function()
         $(".btn-group").slideToggle(300);
     });
 });
-$(document).ready(function()
+$(document).ready(function() //podczas ładowania strony wyświetla animacje fadeIn
 {
     $(".container-fluid").hide(); 
 {
-    $(".container-fluid").fadeIn(2000);
+    $(".container-fluid").fadeIn(1300);
 }
 });
 
+$(document).ready(function()
+{
+    $("#csgoHtml").mouseover(function()
+    {
+        $("#csgoText").css('margin-top', '-20px')
+    })
+})
+/*
+$(document).ready(function()
+{
+    $("#csgoHtml").mouseover(function()
+    {
+        $("#csgoText").width("100px");
+    }),
+    $("#csgoHtml").mouseout(function()
+    {
+        $("#csgoText").width("0px");
+    });
+});
+/*
+function hoverIn()
+{
+    var z = document.getElementById("csgoText");
+    z.style.width = "96.5%";
+    z.style.height = "10%";
+    z.className.replace()
+    
+}
 
+function hoverOut()
+{
+    var x = document.getElementById("csgoText");
+    x.style.width = "0%"
+}
+*/
+
+/*
+$(document).ready(function()
+{
+    $("#csgoText").hide()
+    $("#csgoHtml, #csgoText").mouseover(function()
+    {
+        $("#csgoText").slideDown(300);
+    }),
+    $("#csgoText, #csgoHtml").mouseout(function(){
+        $("#csgoText").slideUp(400);
+    }); 
+});
+*/
+
+/*
+$(document).ready(function()
+{
+    {
+        $("#csgoText").hide();
+    }
+    $("#csgoHtml").mouseover(function(){
+        $("#csgoText").fadeIn(500);
+    }),
+    $("#csgoText").mouseout(function()
+    {
+        $("#csgoText").fadeOut(500);
+    });
+});
+*/
 /*
 $(document).ready(function()
 {

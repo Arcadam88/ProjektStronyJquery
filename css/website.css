@@ -21,7 +21,7 @@ margin-left: -12px;
 html
 {
     scroll-behavior: smooth;
-    
+    transition: 0.5s;
 }
 .aboutGame
 {
@@ -51,7 +51,7 @@ filter: invert(1);
 }
 #dlcButton:hover, #pictureButton:hover, #dropdownButton:hover, #infoButton:hover
 {
-    padding: 2% !important;
+    padding: 1.2% !important;
     transition: 0.5s;
 }
 #menu
@@ -74,3 +74,68 @@ filter: invert(1);
 {
     cursor: pointer;
 }
+#csgoBackground
+{
+    background-image: url("/image/csgo/image_csgo1.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+#csgoText
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    width: 96.5%;
+    z-index: -1;
+    text-align: center;
+}
+#csgoHtml:hover #csgoText
+{
+    margin-bottom: -10px;
+}
+#csgoHtml
+{
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+#csgoHtml:hover
+{
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+#dbdHtml
+{
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+#dbdHtml:hover
+{
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+/*
+.csgoHover:hover #csgoText
+{
+    transition: 0.5s;
+width: 96.5%;
+}
+*/
+
+/*
+#body
+{
+    background: linear-gradient(-50deg, #ee7752, #459df5, #8b2da1, #75212f);
+    animation: gradient 7s infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient
+{
+0%{background-position: 0% 50%;}
+50%{background-position: 100% 50%;}
+100%{background-position: 0% 50%;}}
+*/
