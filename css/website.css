@@ -89,30 +89,21 @@ filter: invert(1);
     bottom: 0;
     margin-bottom: 20px;
     transition: 0.5s;
-    width: 96.5%;
+    width: 70%;
     z-index: -1;
     text-align: center;
 }
-#csgoHtml:hover #csgoText
+.hoverGame:hover #csgoText
 {
     margin-bottom: -10px;
+    background-color: rgba(61, 123, 156);
 }
-#csgoHtml
+.hoverGame
 {
     transition: 0.5s;
     transform: scale(0.8);
 }
-#csgoHtml:hover
-{
-    transform: scale(1.0);
-    transition: 0.5s;
-}
-#dbdHtml
-{
-    transform: scale(0.8);
-    transition: 0.5s;
-}
-#dbdHtml:hover
+.hoverGame:hover
 {
     transform: scale(1.0);
     transition: 0.5s;

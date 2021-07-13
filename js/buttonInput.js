@@ -46,6 +46,10 @@ $(document).ready(function()
     $("#dbdHtml").click(function()
     {
         window.location = 'subPage/subPage_dbd.html';
+    }),
+    $("#residentevilHtml").click(function()
+    {
+        window.location = "subPage/subPage_residentevil.html"
     });
 });
 
@@ -57,7 +61,7 @@ $(document).ready(function()
     }
     $("#menu").click(function()
     {
-        $(".btn-group").slideToggle(300);
+        $(".btn-group").fadeToggle(300);
     });
 });
 $(document).ready(function() //podczas ładowania strony wyświetla animacje fadeIn
@@ -68,13 +72,7 @@ $(document).ready(function() //podczas ładowania strony wyświetla animacje fad
 }
 });
 
-$(document).ready(function()
-{
-    $("#csgoHtml").mouseover(function()
-    {
-        $("#csgoText").css('margin-top', '-20px')
-    })
-})
+
 /*
 $(document).ready(function()
 {
