@@ -108,6 +108,55 @@ filter: invert(1);
     transform: scale(1.0);
     transition: 0.5s;
 }
+.loginForm
+{
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #242222;
+    padding-left: 30px;
+    width: 25%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 36.5%;
+    border: solid 3px;
+    border-radius: 20%;
+}
+.loginButton
+{
+    background-color: orange;
+    border: 1px black solid;
+    
+    width: 100%;
+    height: 50px;
+    
+}
+.inputLogin
+{
+background-color: #242222;
+border-right: #242222;
+border-bottom: white  solid;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 3px;
+}
+.inputLogin:focus
+{
+    background-color: orange;
+    transition: 0.5s;
+}
+.loginItems 
+{
+    background-color: #242222;
+    width: 90%;
+    margin-top: 2%;
+    padding: 30px;
+    
+    color: white;
+    height: 80%;
+}
+
 /*
 .csgoHover:hover #csgoText
 {
