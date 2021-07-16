@@ -24,7 +24,7 @@ $(document).ready(function()
         $(window).scrollTop(0,0);
     });
 });
-
+/*
 $(document).ready(function()
 {
     $("#scrollUp").mouseover(function()
@@ -32,7 +32,7 @@ $(document).ready(function()
         $("#scrollUp").animate({height: "5%"}, 200, 'linear');
     });
 });
-
+*/
 $(document).ready(function()
 {
     $("#csgoHtml").click(function()
@@ -40,7 +40,7 @@ $(document).ready(function()
         window.location = 'subPage/subPage_csgo.html';
     });
 });
-
+//Redirects to this page
 $(document).ready(function()
 {
     $("#dbdHtml").click(function()
@@ -53,8 +53,8 @@ $(document).ready(function()
     });
 });
 
-
-$(document).ready(function()
+//button hiding or displaying button group with "games" button etc.
+$(document).ready(function() 
 {
     {
        $(".btn-group").hide(); 
@@ -63,8 +63,10 @@ $(document).ready(function()
     {
         $(".btn-group").fadeToggle(300);
     });
-});
-$(document).ready(function() //podczas ładowania strony wyświetla animacje fadeIn
+}); 
+
+//when website is loaded, it displays fadeIn animation
+$(document).ready(function()
 {
     $(".container-fluid").hide(); 
 {
@@ -72,6 +74,21 @@ $(document).ready(function() //podczas ładowania strony wyświetla animacje fad
 }
 });
 
+// toggles loginForm class visibilty
+$(document).ready(function() 
+{
+    $("#loginFormButton").click(function()
+    {
+        if($(".loginForm").is(":visible"))
+        {
+            $(".loginForm").hide(750)
+        }
+        else
+        {
+            $(".loginForm").show(750)
+        }
+    });
+});
 
 /*
 $(document).ready(function()
