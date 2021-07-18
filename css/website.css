@@ -8,8 +8,7 @@ z-index: 1;
 margin-top: auto;
 margin-left: -12px;
 }
-#scrollUp
-{
+#scrollUp{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -24,20 +23,21 @@ margin-left: -12px;
     border: 3px solid #242222;
     border-radius: 30%;
 }
-#scrollUp:hover
-{
+#scrollUp:hover{
 background-color: #ffc252;
 margin-bottom: -3%;
 width: 6%;
 }
 
-html
-{
+.hoverGame>img{
+    border: 2px solid #242222;
+    border-radius: 5px;
+}
+html{
     scroll-behavior: smooth;
     transition: 0.5s;
 }
-.aboutGame
-{
+.aboutGame{
     font-size: 30px;
 }
 @keyframes scrollUpA {
@@ -45,8 +45,7 @@ html
  75%{height: 4%;}
  100%{height: 10%;}
 }
-#logo
-{
+#logo{
 filter: invert(1);
 }
 .button-lg:hover
@@ -89,10 +88,11 @@ filter: invert(1);
 }
 .csgoBackground
 {
-    background-image: url("/image/csgo/image_csgo1.jpg");
+    background-image: url("../image/csgo/image_csgo1.jpg");
     background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
+    box-shadow: inset 0 0 100px rgb(122, 121, 115);
 
 }
 .blurBackground
@@ -128,6 +128,7 @@ filter: invert(1);
 {
     transform: scale(1);
     transition: 0.5s;
+    filter: saturate(2)
 }
 .loginForm
 {
@@ -144,6 +145,7 @@ filter: invert(1);
     border-radius: 20%;
     overflow: auto;
     box-shadow: 5px 5px;
+    display: none;
 }
 .loginButton
 {
@@ -154,7 +156,7 @@ filter: invert(1);
     border-radius: 10px;
     transition: 0.5s;
 }
-.loginButton:hover
+.loginButton:hover, .loginFormButton:hover
 {
     background-color: #ffc252;
     transition: 0.5s;
@@ -194,8 +196,11 @@ margin-bottom: 5%;
 border: 0px solid white;
 border-radius: 3px;
 width: 5%;
-
+height: 40px;
 background-color: orange;
+margin-top: 1%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+transition: 0.5s;
 }
 
 .bg-orange
@@ -205,6 +210,15 @@ background-color: orange;
 #dbdHtml, #csgoHtml
 {
     cursor: pointer;
+}
+.footerBorder
+{
+ border: 2px solid #242222; 
+ border-radius: 10px;   
+}
+.footerSize
+{
+    height: 50px;
 }
 /*
 .csgoHover:hover #csgoText

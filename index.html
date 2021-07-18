@@ -1,26 +1,33 @@
 <!doctype html>
 <html lang="pl">
     <head>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Bartosz Skrzydelski">
         <title>Projekt Strony jquery</title>
-        
+    
+
+        <!--CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/website.css">
+        
+        <!--Jquery, bootstrap js-->        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/website.css">
-        
-        <meta name="author" content="Bartosz Skrzydelski">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!---Custom JS-->
         <script src="js/buttonInput.js"></script>   
     </head>
     <body id="body" class="container-fluid bg-dark csgoBackground">
-    <button type="button" id="loginFormButton" class="loginFormButton">Klik</button>
+    <button type="button" id="loginFormButton" class="loginFormButton">Login</button>
       <form class="loginForm justify-content-center">
           
           <div class="loginItems"> <!--To do: Login with php-->
@@ -40,47 +47,86 @@
         
 
             <div id="picture" class="row justify-content-center"> <!---games-->
-                <div class="col-sm-4">
-                    <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                <div class="col-sm-4"> <!--To do: change id csgoText to class-->
+
+                    <a href="/subPage/subPage_csgo.html"><div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                         <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                        <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
+                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                    </div>
+                </a>
+                        
+                        <a href=""><div id="dbdHtml" class="hoverGame d-flex justify-content-center">
                             <span id="csgoText" class="text-light h5 border rounded pointer">Dead By Daylight</span>
-                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                            <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                        </div>
+                    </a>
+                            
+                           <a href=""><div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                                 <span id="csgoText" class="text-light h5 border rounded pointer">Resident Evil VII: Biohazard</span>
-                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                                <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                            </div>
+                        </a>
+                                
+                                <a href=""><div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                                     <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
+                                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                                </div>
+                            </a>
             </div>
             <div class="col-sm-4">
-                <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                <a href="/subPage/subPage_csgo.html">
+                    <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                     <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                    <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
+                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                </div>
+            </a>
+                    
+                    <a href="/subPage/subPage_csgo.html">
+                        <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
                         <span id="csgoText" class="text-light h5 border rounded pointer">Dead By Daylight</span>
-                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                        <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
+                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                    </div>
+                </a>
+                        
+                        <a href="">
+                            <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
                             <span id="csgoText" class="text-light h5 border rounded pointer">Resident Evil VII: Biohazard</span>
-                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                            <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                                <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
+                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                        </div>
+                    </a>
+                            
+                           <a href=""> <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                                <span id="csgoText" class="text-light h5 border rounded pointer ">Counter Strike: Global Offensive</span>
+                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
+                            </div>
+                        </a>
         </div>
                 <div class="col-sm-4">
-                    <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+
+                   <a href=""> 
+                       <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                         <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                        <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
+                        <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg">
+                    </div>
+                </a>
+                        
+                       <a href=""> <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
                             <span id="csgoText" class="text-light h5 border rounded pointer">Dead By Daylight</span>
-                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                            <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
+                            <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg">
+                        </div>
+                    </a>
+                            
+                           <a href=""> <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
                                 <span id="csgoText" class="text-light h5 border rounded pointer">Resident Evil VII: Biohazard</span>
-                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
-                                <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
+                                <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg">
+                            </div>
+                        </a>
+                                
+                                <a href=""><div id="csgoHtml" class="hoverGame d-flex justify-content-center">
                                     <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
-                                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg"></div>
+                                    <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/csgo/image_csgo_dlc.jpg">
+                                </div>
+                            </a>
             </div>
             
         <section class="d-flex mt-4"></section>
@@ -93,18 +139,18 @@
 <footer class="">
  
   
-    <div>
+    <div class="">
       
-      <div class="row pt-3 pl-3 bg-orange">
+      <div class="row pt-1 pl-3 footerBorder  bg-orange">
         
-        <div class="col-md-6 mx-left">
+        <div class="col-md-3  mx-left">
          
           <p class="text-dark h4">
          Bartosz Skrzydelski
           </p>
-          <p>
+          
             <a class="text-dark h5 ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My Github</a>
-          </p>
+          
         </div>
         </div>
         </div>

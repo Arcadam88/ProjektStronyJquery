@@ -33,25 +33,9 @@ $(document).ready(function()
     });
 });
 */
-$(document).ready(function()
-{
-    $("#csgoHtml").click(function()
-    {
-        window.location = 'subPage/subPage_csgo.html';
-    });
-});
-//Redirects to this page
-$(document).ready(function()
-{
-    $("#dbdHtml").click(function()
-    {
-        window.location = 'subPage/subPage_dbd.html';
-    }),
-    $("#residentevilHtml").click(function()
-    {
-        window.location = "subPage/subPage_residentevil.html"
-    });
-});
+
+
+
 
 //button hiding or displaying button group with "games" button etc.
 $(document).ready(function() 
