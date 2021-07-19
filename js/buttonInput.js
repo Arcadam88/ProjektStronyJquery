@@ -24,17 +24,6 @@ $(document).ready(function()
         $(window).scrollTop(0,0);
     });
 });
-/*
-$(document).ready(function()
-{
-    $("#scrollUp").mouseover(function()
-    {
-        $("#scrollUp").animate({height: "5%"}, 200, 'linear');
-    });
-});
-*/
-
-
 
 
 //button hiding or displaying button group with "games" button etc.
@@ -52,10 +41,7 @@ $(document).ready(function()
 //when website is loaded, it displays fadeIn animation
 $(document).ready(function()
 {
-    $(".container-fluid").hide(); 
-{
-    $(".container-fluid").fadeIn(1300);
-}
+    $("html").fadeIn();
 });
 
 // toggles loginForm class visibilty
@@ -72,6 +58,15 @@ $(document).ready(function()
             $(".loginForm").show(750)
         }
     });
+});
+
+$(document).ready(function()
+{
+    $("#dlcText").hide();
+
+{
+    $("#dlcText").slideDown(1300);
+}
 });
 
 /*
