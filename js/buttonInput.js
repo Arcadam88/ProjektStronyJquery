@@ -69,6 +69,20 @@ $(document).ready(function()
 }
 });
 
+
+$(document).ready(function()
+{
+    $(".shooter").click(function()
+    {
+        $(".horrorGame").fadeOut(500)
+        $(".shooterGame").fadeIn(500)
+    })
+    $(".horror").click(function()
+    {
+        $(".shooterGame").fadeOut(500);
+        $(".horrorGame").fadeIn(500);
+    });
+});
 /*
 $(document).ready(function()
 {
