@@ -38,11 +38,6 @@ $(document).ready(function()
     });
 }); 
 
-//when website is loaded, it displays fadeIn animation
-$(document).ready(function()
-{
-    $("html").fadeIn();
-});
 
 // toggles loginForm class visibilty
 $(document).ready(function() 
@@ -101,87 +96,3 @@ $(document).ready(function()
         $('.horrorGame, .shooterGame').show(500);
     });
 });
-/*
-$(document).ready(function()
-{
-    $("#csgoHtml").mouseover(function()
-    {
-        $("#csgoText").width("100px");
-    }),
-    $("#csgoHtml").mouseout(function()
-    {
-        $("#csgoText").width("0px");
-    });
-});
-/*
-function hoverIn()
-{
-    var z = document.getElementById("csgoText");
-    z.style.width = "96.5%";
-    z.style.height = "10%";
-    z.className.replace()
-    
-}
-
-function hoverOut()
-{
-    var x = document.getElementById("csgoText");
-    x.style.width = "0%"
-}
-*/
-
-/*
-$(document).ready(function()
-{
-    $("#csgoText").hide()
-    $("#csgoHtml, #csgoText").mouseover(function()
-    {
-        $("#csgoText").slideDown(300);
-    }),
-    $("#csgoText, #csgoHtml").mouseout(function(){
-        $("#csgoText").slideUp(400);
-    }); 
-});
-*/
-
-/*
-$(document).ready(function()
-{
-    {
-        $("#csgoText").hide();
-    }
-    $("#csgoHtml").mouseover(function(){
-        $("#csgoText").fadeIn(500);
-    }),
-    $("#csgoText").mouseout(function()
-    {
-        $("#csgoText").fadeOut(500);
-    });
-});
-*/
-/*
-$(document).ready(function()
-{
-    $("#menu").click(function()
-    {
-        $(".btn-group").animate({opacity: "hide", right: "100%"},"linear");
-    },
-    
-    $("#menu").click(function()
-    {
-        $(".btn-group").animate({opacity: "0", right: "0%"}, "linear");
-    }));
-});
-*/
-
-
-/* //deprecated (Element wasn't responsive as the rest of the website (replaced with bootstrap))
-$(document).ready(function()
-{
-    $("#dropdownButton").click(function()
-    {
-        $("#dropdown").fadeToggle(200);
-        $("#dropdown").animate ({top: "9%"})
-    });
-});
-*/
