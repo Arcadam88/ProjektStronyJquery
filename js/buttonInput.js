@@ -56,14 +56,6 @@ $(document).ready(function()
     });
 });
 
-$(document).ready(function()
-{
-    $("#dlcText").hide();
-
-{
-    $("#dlcText").slideDown(1300);
-}
-});
 
 $(document).ready(function()
 {
