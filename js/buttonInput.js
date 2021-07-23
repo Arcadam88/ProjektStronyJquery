@@ -56,6 +56,7 @@ $(document).ready(function()
         else
         {
             $(".loginForm").show(750)
+            $(".drpdown").fadeOut(750)
         }
     });
 });
@@ -69,18 +70,35 @@ $(document).ready(function()
 }
 });
 
+$(document).ready(function()
+{
+    $('#categoriesButton').click(function()
+    {
+        if($('.drpdown').is(':visible'))
+        {
+            $('.drpdown').fadeOut(300);
+        }else
+        {
+            $('.drpdown').fadeIn(300);
+        };
+    });
+});
 
 $(document).ready(function()
 {
-    $(".shooter").click(function()
+    $("#shooter").click(function()
     {
-        $(".horrorGame").fadeOut(500)
-        $(".shooterGame").fadeIn(500)
-    })
-    $(".horror").click(function()
+        $(".horrorGame").hide(500)
+        $(".shooterGame").show(500)
+    }),
+    $("#horror").click(function()
     {
-        $(".shooterGame").fadeOut(500);
-        $(".horrorGame").fadeIn(500);
+        $(".shooterGame").hide(500);
+        $(".horrorGame").show(500);
+    }),
+    $("#all").click(function()
+    {
+        $('.horrorGame, .shooterGame').show(500);
     });
 });
 /*

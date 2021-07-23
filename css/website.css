@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 html{
     display: none;
 }
-.dropdown-content
-{
+.dropdown-content{
 position: absolute;
 border: 3px solid black;
 width: 15%;
@@ -38,11 +39,12 @@ margin-bottom: -3%;
 html{
     scroll-behavior: smooth;
     transition: 0.5s;
+    margin-bottom: 10%;
 }
 .aboutGame{
     font-size: 30px;
 }
-@keyframes scrollUpA {
+@keyframes scrollUpA{
  50%{height: 3%;}
  75%{height: 4%;}
  100%{height: 10%;}
@@ -50,53 +52,40 @@ html{
 #logo{
 filter: invert(1);
 }
-.button-lg:hover
-{
+.button-lg:hover{
     padding: 10% !important;
 }
-#review
-{
+#review{
     font-size: 40px;
 }
 
-#dlcButton, #pictureButton, #dropdownButton, #infoButton
-{
+#dlcButton, #pictureButton, #dropdownButton, #infoButton{
     transition: 0.5s;
 }
-#dlcButton:hover, #pictureButton:hover, #dropdownButton:hover, #infoButton:hover
-{
+#dlcButton:hover, #pictureButton:hover, #dropdownButton:hover, #infoButton:hover{
     padding: 1.2% !important;
     transition: 0.5s;
 }
-#menu
-{
+#menu{
     height: 1%;
     width: 5%;
     
 }
-.bi-list
-{
+.bi-list{
     filter: invert(1) !important;
 }
-.imgText
-{
+.imgText{
     position: absolute;
     bottom: 5px;
     right: 5px;
 }
-.pointer
-{
+.pointer{
     cursor: pointer;
 }
-.csgoBackground
-{
+.csgoBackground{
     background-image: url("../image/csgo/image_csgo1.jpg");
     background-repeat: no-repeat;
-    
     background-attachment: fixed;
-    box-shadow: inset 0 0 300px rgb(122, 121, 115);
-   
-
 }
 .blurBackground
 {
@@ -105,7 +94,7 @@ filter: invert(1);
     filter: blur(3px);
 }
 
-#csgoText
+.nameElement
 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -115,12 +104,18 @@ filter: invert(1);
     width: 70%;
     z-index: -1;
     text-align: center;
+    border: solid 2px #242222;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
 }
-.hoverGame:hover #csgoText
+.hoverGame:hover .nameElement
 {
     transition: 0.5s;
-    background-color: rgba(61, 123, 156);
+    background-color: orange;
     z-index: 1;
+    
 }
 .hoverGame
 {
@@ -144,7 +139,6 @@ filter: invert(1);
     position: fixed;
     z-index: 1;
     background-color: #242222;
-    
     width: 45%;
     height: 50%;
     margin-top: 10%;
@@ -192,17 +186,19 @@ margin-bottom: 5%;
     padding: 2%;
     color: white;
     height: 80%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
-.loginFormFont
-{
+.loginFormFont{
     color: orange;
     border-bottom: 1px orange solid;
     text-align: center;
     padding-bottom: 3%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 /*This button is used to turn on Login Form*/
 .loginFormButton{
-    
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 18px;
 border: 0px solid white;
 border-radius: 3px;
 padding-left: 20%;
@@ -212,23 +208,79 @@ margin-top: 1%;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 transition: 0.5s;
 }
-.loginFormButtonHolder
-{
+.loginFormButtonHolder{
     width: 100%;
     height: 50%;
 }
 
 
-.bg-orange
-{
+.bg-orange{
     background-color: orange;
 }
-#dbdHtml, #csgoHtml
-{
+#dbdHtml, #csgoHtml{
     cursor: pointer;
 }
-.footerBorder
-{
+.footerBorder{
  border: 2px solid #242222; 
  border-radius: 10px;   
+ font-family: 'Noto Sans JP', sans-serif;
+ text-decoration: none;
+}
+
+.drpdown{
+    z-index: 1;
+    margin-left: -1%;
+    padding-left: 3%;
+    margin-top: 1%;
+    position: absolute;
+    height: 17.5%;
+    background: orange;
+    border: 2px solid #242222; 
+    display: none;
+    overflow: hidden;
+    cursor: default;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow: auto;
+}
+.categoryTypeButton{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    width: 120%;
+    z-index: 2;
+    border: 2px solid;
+    margin-top: 5%;
+    margin-left: -30%;
+    padding-top: 10%;
+    background: orange;
+    
+}
+.categoriesButton{
+    
+    border: 0px solid white;
+    border-radius: 3px;
+    padding-left: 20%;
+    padding: 1%;
+    background-color: orange;
+    margin-top: 1%;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 0.5s;
+    
+    }
+.footerClassBottom
+{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.5)
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(95, 95, 95);
+    border-radius: 20px;
 }

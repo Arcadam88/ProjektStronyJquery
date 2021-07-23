@@ -31,7 +31,16 @@
     
     <div class="loginFormButtonHolder container-fluid">
     <button type="button" id="loginFormButton" class="loginFormButton btn">Login</button>
-    <button type="button" id="categoriesButton" class="">Categories</button>
+    <div class="categoriesButton btn" id="categoriesButton">
+    <button type="button"  class="categoriesButton ">Categories</button>
+    <div class="drpdown">
+    <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
+    <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
+    <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
+ 
+    </div>
+    </div>
+  
 </div>
 
       <form class="loginForm justify-content-center">
@@ -57,92 +66,92 @@
         
 
             <div id="picture" class="row justify-content-center"> <!---games-->
-                <div class="col-sm-4"> <!--To do: change id csgoText to class-->
+                <div class="col-sm-4">
 
-                    <a href="subPage/subPage_csgo.html">
+                    <a href="subPage/subPage_csgo.html" class="shooterGame">
                         <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                        <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Global Offensive</span>
+                        <span class="nameElement pointer">Counter Strike: Global Offensive</span>
                         <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/csgo/image_csgo_dlc.jpg">
                     </div>
                 </a>
                         
-                        <a href="">
+                        <a href="" class="shooterGame">
                             <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
-                            <span id="csgoText" class="text-light h5 border rounded pointer">DOOM Eternal</span>
+                            <span class="nameElement pointer">DOOM Eternal</span>
                             <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/doom_eternal/doom_eternal_Thumbnail.jpg">
                         </div>
                     </a>
                             
-                           <a href="">
-                               <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                                <span id="csgoText" class="text-light h5 border rounded pointer">Resident Evil VII: Biohazard</span>
+                           <a href="" class="horrorGame">
+                               <div id="csgoHtml" class="hoverGame d-flex justify-content-center ">
+                                <span class="nameElement pointer">Resident Evil VII: Biohazard</span>
                                 <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/residentev/residentev_thumbnail.jpg.jpg">
                             </div>
                         </a>
                                 
-                                <a href="">
+                                <a href="" class="shooterGame">
                                     <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                                    <span id="csgoText" class="text-light h5 border rounded pointer">Grand Theft Auto: V</span>
+                                    <span class="nameElement pointer">Grand Theft Auto: V</span>
                                     <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/gtav/gtav_thumbnail.jpg">
                                 </div>
                             </a>
             </div>
             <div class="col-sm-4">
 
-                <a href="/subPage/subPage_csgo.html">
+                <a href="/subPage/subPage_csgo.html" class="shooterGame">
                     <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                    <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike: Source</span>
+                    <span class="nameElement pointer">Counter Strike: Source</span>
                     <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/cssource/cs_source_thumbnail.jpg">
                 </div>
             </a>
                     
-                    <a href="/subPage/subPage_csgo.html">
+                    <a href="/subPage/subPage_csgo.html" class="shooterGame">
                         <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
-                        <span id="csgoText" class="text-light h5 border rounded pointer ">DOOM 2016</span>
+                        <span class="nameElement pointer ">DOOM 2016</span>
                         <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/doom2016/doom2016_thumbnail.jpg">
                     </div>
                 </a>
                         
-                        <a href="">
+                        <a href="" class="horrorGame">
                             <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
-                            <span id="csgoText" class="text-light h5 border rounded pointer">Resident Evil VIII: Village</span>
+                            <span class="nameElement pointer ">Resident Evil VIII: Village</span>
                             <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/residentev_village/residentev_village_Thumbnail.jpg">
                         </div>
                     </a>
                             
-                           <a href=""> 
+                           <a href="" class="shooterGame"> 
                                 <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                                <span id="csgoText" class="text-light h5 border rounded pointer ">Serious Sam 4</span>
+                                <span class="nameElement pointer ">Serious Sam 4</span>
                                 <img class="w-100 rounded h-25 mt-2 mb-3  pointer imageBorder"  src="image/serioussam4/serioussam4_thumbnail.png">
                             </div>
                         </a>
         </div>
                 <div class="col-sm-4">
 
-                   <a href=""> 
+                   <a href="" class="shooterGame"> 
                        <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                        <span id="csgoText" class="text-light h5 border rounded pointer">Counter Strike</span>
+                        <span class="nameElement pointer">Counter Strike</span>
                         <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/cs16/cs_thumbnail.jpg">
                     </div>
                 </a>
                         
-                       <a href=""> 
+                       <a href="" class="horrorGame"> 
                            <div id="dbdHtml" class="hoverGame d-flex justify-content-center">
-                            <span id="csgoText" class="text-light h5 border rounded pointer">Dead By Daylight</span>
+                            <span class="nameElement pointer">Dead By Daylight</span>
                             <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/dbd/dbd_Main.jpg">
                         </div>
                     </a>
                             
-                           <a href=""> 
+                           <a href="" class="shooterGame"> 
                                <div id="residentevilHtml" class="hoverGame d-flex justify-content-center">
-                                <span id="csgoText" class="text-light h5 border rounded pointer">Tom Clancy's Rainbow Six Siege</span>
+                                <span class="nameElement pointer">Tom Clancy's Rainbow Six Siege</span>
                                 <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/rainbowsix/rainbowsix_thumbnail.jpg">
                             </div>
                         </a>
                                 
-                                <a href="">
+                                <a href="" class="shooterGame">
                                     <div id="csgoHtml" class="hoverGame d-flex justify-content-center">
-                                    <span id="csgoText" class="text-light h5 border rounded pointer">Serious Sam 3</span>
+                                    <span class="nameElement pointer">Serious Sam 3</span>
                                     <img class="w-100 rounded h-25 mt-2 mb-3  pointer"  src="image/serioussam3/serioussam3_thumbnail.jpg">
                                 </div>
                             </a>
@@ -155,7 +164,7 @@
       <div>
   
 
-<footer class="">
+<footer class="footerClassBottom">
  
   
     <div class="">
