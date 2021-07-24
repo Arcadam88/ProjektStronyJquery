@@ -1,35 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
+/*loading animation component, after "loader" (text slides down)*/
 @keyframes dlcTextAnimation {
-    0% {margin-top: -10%;}
-    100%{margin-top: 0%;}
+    0% {
+        margin-top: -10%;
+    }
+
+    100% {
+        margin-top: 0%;
+    }
 }
- .loaderWrap
- {
-     width: 100%;
-     height: 200%;
-     position: fixed;
-     top: 0;
-     left: 0;
-     background: #242222;
-     display: flex;
-     justify-content: center;
-     z-index: 2;   
- }
- @keyframes spin {
-	0%{ transform: rotate(0deg);}
-	100%{ transform: rotate(360deg);}
+/*loading animation component*/
+.loaderWrap {
+    width: 100%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #242222;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
 }
-.bubble1{
-display: flex;
-width: 20%;
-height: 10%;
-margin-top: 20%;
-align-content: center;
-z-index: 3;
+/*loading animation component*/
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.bubble1>img
-{
+/*loading animation component*/
+.bubble1 {
+    display: flex;
+    width: 20%;
+    height: 10%;
+    margin-top: 20%;
+    align-content: center;
+    z-index: 3;
+}
+/*loading animation component*/
+.bubble1>img {
     height: auto;
     width: auto;
     max-height: 70%;
@@ -38,28 +50,28 @@ z-index: 3;
     margin: auto;
     animation: spin 1s ease-in-out;
     animation-iteration-count: 2;
-    
+
 }
 
-#dlcText
-{
+#dlcText {
     position: relative;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-name: dlcTextAnimation;
     animation-duration: 2.75s;
 }
 
-
-.dropdown-content{
-position: absolute;
-border: 3px solid black;
-width: 15%;
-height: 15%;
-z-index: 1;
-margin-top: auto;
-margin-left: -12px;
+/*contents of dropdown with categories*/
+.dropdown-content {
+    position: absolute;
+    border: 3px solid black;
+    width: 15%;
+    height: 15%;
+    z-index: 1;
+    margin-top: auto;
+    margin-left: -12px;
 }
-#scrollUp{
+/*scroll up button*/
+#scrollUp {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -74,83 +86,96 @@ margin-left: -12px;
     border: 3px solid #242222;
     border-radius: 30%;
 }
-#scrollUp:hover{
-background-color: #ffc252;
-margin-bottom: -2%;
+/*scrollUp button when it's hovered*/
+#scrollUp:hover {
+    background-color: #ffc252;
+    margin-bottom: -2%;
 }
-
-.hoverGame>img{
+/*Changes to all image children of hovergame*/
+.hoverGame>img {
     border: 2px solid #242222;
     border-radius: 5px;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     transition: 0.5s;
     margin-bottom: 10%;
+    max-width: 100%;
 }
-.aboutGame{
+
+.aboutGame {
     font-size: 30px;
 }
-@keyframes scrollUpA{
- 50%{height: 3%;}
- 75%{height: 4%;}
- 100%{height: 10%;}
+
+#logo {
+    filter: invert(1);
 }
-#logo{
-filter: invert(1);
-}
-.button-lg:hover{
+
+.button-lg:hover {
     padding: 10% !important;
 }
-#review{
+
+#review {
     font-size: 40px;
 }
 
-#dlcButton, #pictureButton, #dropdownButton, #infoButton{
+#dlcButton,
+#pictureButton,
+#dropdownButton,
+#infoButton {
     transition: 0.5s;
 }
-#dlcButton:hover, #pictureButton:hover, #dropdownButton:hover, #infoButton:hover{
+
+#dlcButton:hover,
+#pictureButton:hover,
+#dropdownButton:hover,
+#infoButton:hover {
     padding: 1.2% !important;
     transition: 0.5s;
 }
-#menu{
+
+#menu {
     height: 1%;
     width: 5%;
-    
+
 }
-.bi-list{
+
+.bi-list {
     filter: invert(1) !important;
 }
-.imgText{
+
+.imgText {
     position: absolute;
     bottom: 5px;
     right: 5px;
 }
-.pointer{
+
+.pointer {
     cursor: pointer;
 }
-.csgoBackground{
+
+.csgoBackground {
     background-image: url("../image/csgo/image_csgo1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.blurBackground
-{
+
+.blurBackground {
     width: 100%;
     height: 100%;
     filter: blur(3px);
 }
-.boxSizingGame
-{
-    
+
+.boxSizingGame {
+
     max-width: 100%;
     max-height: 270px;
     min-height: 270px;
     margin-top: 3%;
 }
 
-.nameElement
-{
+.nameElement {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
@@ -166,20 +191,20 @@ filter: invert(1);
     color: black;
     overflow: hidden;
 }
-.hoverGame:hover .nameElement
-{
+
+.hoverGame:hover .nameElement {
     transition: 0.5s;
     background-color: orange;
     z-index: 1;
-    
+
 }
-.hoverGame
-{
+
+.hoverGame {
     transition: 0.5s;
     transform: scale(0.95);
 }
-.hoverGame:hover
-{
+
+.hoverGame:hover {
     transform: scale(1);
     transition: 0.5s;
     filter: saturate(2)
@@ -187,8 +212,7 @@ filter: invert(1);
 
 
 
-.loginForm
-{
+.loginForm {
     padding-top: 1%;
     padding-left: 4%;
     top: 0;
@@ -205,8 +229,8 @@ filter: invert(1);
     box-shadow: 5px 5px;
     display: none;
 }
-.loginButton
-{
+
+.loginButton {
     background-color: #ffa500;
     border: 1px black solid;
     width: 100%;
@@ -214,28 +238,29 @@ filter: invert(1);
     border-radius: 10px;
     transition: 0.5s;
 }
-.loginButton:hover, .loginFormButton:hover
-{
+
+.loginButton:hover,
+.loginFormButton:hover {
     background-color: #ffc252;
     transition: 0.5s;
 }
-.inputLogin
-{
-background-color: #242222;
-border-right: #242222;
-border-bottom: white  solid;
-border-radius: 3px;
-width: 100%;
-padding: 3%;
-margin-bottom: 5%;
+
+.inputLogin {
+    background-color: #242222;
+    border-right: #242222;
+    border-bottom: white solid;
+    border-radius: 3px;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 5%;
 }
-.inputLogin:focus
-{
+
+.inputLogin:focus {
     background-color: orange;
     transition: 0.5s;
 }
-.loginItems 
-{
+
+.loginItems {
     background-color: #242222;
     width: 90%;
     margin-top: 1%;
@@ -244,46 +269,52 @@ margin-bottom: 5%;
     height: 80%;
     font-family: 'Noto Sans JP', sans-serif;
 }
-.loginFormFont{
+
+.loginFormFont {
     color: orange;
     border-bottom: 1px orange solid;
     text-align: center;
     padding-bottom: 3%;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 /*This button is used to turn on Login Form*/
-.loginFormButton{
-font-family: 'Noto Sans JP', sans-serif;
-font-size: 18px;
-border: 0px solid white;
-border-radius: 3px;
-padding-left: 20%;
-padding: 1%;
-background-color: orange;
-margin-top: 1%;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-transition: 0.5s;
+.loginFormButton {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    border: 0px solid white;
+    border-radius: 3px;
+    padding-left: 20%;
+    padding: 1%;
+    background-color: orange;
+    margin-top: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
 }
-.loginFormButtonHolder{
+
+.loginFormButtonHolder {
     width: 100%;
     height: 50%;
 }
 
 
-.bg-orange{
+.bg-orange {
     background-color: orange;
 }
-#dbdHtml, #csgoHtml{
+
+#dbdHtml,
+#csgoHtml {
     cursor: pointer;
 }
-.footerBorder{
- border: 2px solid #242222; 
- border-radius: 10px;   
- font-family: 'Noto Sans JP', sans-serif;
- text-decoration: none;
+
+.footerBorder {
+    border: 2px solid #242222;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
 }
 
-.drpdown{
+.drpdown {
     z-index: 1;
     margin-left: -1%;
     padding-left: 3%;
@@ -291,14 +322,15 @@ transition: 0.5s;
     position: absolute;
     height: 17.5%;
     background: orange;
-    border: 2px solid #242222; 
+    border: 2px solid #242222;
     display: none;
     overflow: hidden;
     cursor: default;
     font-family: 'Noto Sans JP', sans-serif;
     overflow: auto;
 }
-.categoryTypeButton{
+
+.categoryTypeButton {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 20px;
     position: relative;
@@ -310,10 +342,11 @@ transition: 0.5s;
     margin-left: -30%;
     padding-top: 10%;
     background: orange;
-    
+
 }
-.categoriesButton{
-    
+
+.categoriesButton {
+
     border: 0px solid white;
     border-radius: 3px;
     padding-left: 20%;
@@ -322,21 +355,39 @@ transition: 0.5s;
     margin-top: 1%;
     font-family: 'Noto Sans JP', sans-serif;
     transition: 0.5s;
-    
-    }
-.footerClassBottom
-{
+
+}
+
+.footerClassBottom {
     bottom: 0;
     position: fixed;
     width: 100%;
+   
 }
-::-webkit-scrollbar
+
+.footerClassFont
 {
+    color: #242222;
+    text-decoration: none;
+    font-size: 20px;
+    
+    text-align: center;
+    max-height: 10px;
+}
+.footerClassFont:hover
+{
+    text-decoration: none;
+}
+::-webkit-scrollbar {
     width: 10px;
     background: rgba(0, 0, 0, 0.5)
 }
-::-webkit-scrollbar-thumb
-{
+
+::-webkit-scrollbar-thumb {
     background-color: rgb(95, 95, 95);
     border-radius: 20px;
+}
+.shrinkWidth
+{
+    max-width: 80%;
 }
