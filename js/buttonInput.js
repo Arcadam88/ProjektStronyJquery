@@ -88,3 +88,11 @@ $(document).ready(function()
         $('.horrorGame, .shooterGame').show(500);
     });
 });
+
+window.onload = function () 
+{  
+    setTimeout(function () {
+        let x = document.querySelector('.loaderWrap')
+        x.remove();
+      }, 2000)
+}
