@@ -1,198 +1,218 @@
 <!doctype html>
 <html lang="pl">
-    <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Bartosz Skrzydelski">
-        <title>Projekt Strony jquery</title>
-    
-        <!--CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!--bootstrap (never again)-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-        <!--Custom CSS-->
-        <link rel="stylesheet" href="css/website.css">
-        
-        <!--Jquery, bootstrap js-->        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <!---Custom JS-->
-        <script src="js/buttonInput.js"></script>   
-    </head>
-    <body class="container-fluid bg-dark csgoBackground ">
+<head>
 
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Bartosz Skrzydelski">
+    <title>Projekt Strony jquery</title>
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--bootstrap (never again)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/website.css">
+
+    <!--Jquery, bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <!---Custom JS-->
+    <script src="js/buttonInput.js"></script>
+</head>
+
+<body class="container-fluid bg-dark csgoBackground ">
+
+
     <div class="loginFormButtonHolder container-fluid">
-    <button type="button" id="loginFormButton" class="loginFormButton btn">Login</button>
-    <div class="categoriesButton btn" id="categoriesButton">
-    <button type="button"  class="categoriesButton ">Categories</button>
-    <div class="drpdown">
-    <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
-    <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
-    <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
- 
-    </div>
-    </div>
-  
-</div>
+        <button type="button" id="loginFormButton" class="loginFormButton btn">Login</button>
+        <div class="categoriesButton btn" id="categoriesButton">
+            <button type="button" class="categoriesButton ">Categories</button>
+            <div class="drpdown">
+                <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
+                <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
+                <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
 
-      <form class="loginForm justify-content-center">
-          
-          <div class="loginItems"> <!--To do: Login with php-->
+            </div>
+        </div>
+
+    </div>
+
+    <form class="loginForm justify-content-center">
+
+        <div class="loginItems">
+            <!--To do: Login with php-->
             <p class="h4 loginFormFont">Login form</p>
             <label>Your email</label>
             <i class="bi bi-envelope"></i><input type="email" class="inputLogin" placeholder="Email">
 
-          <label>Your password</label>
-          <i class="bi bi-lock"></i>
-          <input type="password" class="inputLogin"placeholder="Password ">
+            <label>Your password</label>
+            <i class="bi bi-lock"></i>
+            <input type="password" class="inputLogin" placeholder="Password ">
 
-          <label>No account? Sign up here</label>
-          <button type="submit" class="loginButton">Login</button>
+            <label>No account? Sign up here</label>
+            <button type="submit" class="loginButton">Login</button>
         </div>
-      </form>
+    </form>
 
     <div>
 
         <p id="dlcText" class="display-1 text-light text-center">Choose your game first</p>
         <hr class="bg-orange">
-        
 
-            <div id="picture" class="row justify-content-center"> <!---games-->
-                <div class="col-sm-4">
 
-                    <a href="subPage/subPage_csgo.html" class="shooterGame">
-                        <div id="csgoHtml" class="hoverGame boxSizing">
+        <div id="picture" class="row justify-content-center">
+            <!---games-->
+            <div class="col-sm-4">
+
+                <a href="subPage/subPage_csgo.html" class="shooterGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing">
                         <span class="nameElement pointer">Counter Strike: Global Offensive</span>
-                        <img class="  pointer imageBorder boxSizingGame"  src="image/csgo/image_csgo_dlc.jpg">
+                        <img class="  pointer imageBorder boxSizingGame" src="image/csgo/image_csgo_dlc.jpg">
                     </div>
                 </a>
-                        
-                        <a href="" class="shooterGame">
-                            <div id="dbdHtml" class="hoverGame boxSizing">
-                            <span class="nameElement pointer">DOOM Eternal</span>
-                            <img class="  pointer imageBorder boxSizingGame"  src="image/doom_eternal/doom_eternal_Thumbnail.jpg">
-                        </div>
-                    </a>
-                            
-                           <a href="" class="horrorGame">
-                               <div id="csgoHtml" class="hoverGame boxSizing ">
-                                <span class="nameElement pointer">Resident Evil VII: Biohazard</span>
-                                <img class="  pointer imageBorder boxSizingGame"  src="image/residentev/residentev_thumbnail.jpg">
-                            </div>
-                        </a>
-                                
-                                <a href="" class="shooterGame">
-                                    <div id="csgoHtml" class="hoverGame boxSizing">
-                                    <span class="nameElement pointer">Grand Theft Auto: V</span>
-                                    <img class="  pointer imageBorder boxSizingGame"  src="image/gtav/gtav_thumbnail.jpg">
-                                </div>
-                            </a>
+
+                <a href="" class="shooterGame">
+                    <div id="dbdHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">DOOM Eternal</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/doom_eternal/doom_eternal_Thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="horrorGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing ">
+                        <span class="nameElement pointer">Resident Evil VII: Biohazard</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/residentev/residentev_thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="shooterGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">Grand Theft Auto: V</span>
+                        <img class="  pointer imageBorder boxSizingGame" src="image/gtav/gtav_thumbnail.jpg">
+                    </div>
+                </a>
             </div>
             <div class="col-sm-4">
 
                 <a href="/subPage/subPage_csgo.html" class="shooterGame">
                     <div id="csgoHtml" class="hoverGame boxSizing">
-                    <span class="nameElement pointer">Counter Strike: Source</span>
-                    <img class="  pointer imageBorder boxSizingGame"  src="image/cssource/cs_source_thumbnail.jpg">
-                </div>
-            </a>
-                    
-                    <a href="/subPage/subPage_csgo.html" class="shooterGame">
-                        <div id="dbdHtml" class="hoverGame boxSizing">
-                        <span class="nameElement pointer ">DOOM 2016</span>
-                        <img class="  pointer imageBorder boxSizingGame"  src="image/doom2016/doom2016_thumbnail.jpg">
+                        <span class="nameElement pointer">Counter Strike: Source</span>
+                        <img class="  pointer imageBorder boxSizingGame" src="image/cssource/cs_source_thumbnail.jpg">
                     </div>
                 </a>
-                        
-                        <a href="" class="horrorGame">
-                            <div id="residentevilHtml" class="hoverGame boxSizing">
-                            <span class="nameElement pointer ">Resident Evil VIII: Village</span>
-                            <img class="  pointer imageBorder boxSizingGame"  src="image/residentev_village/residentev_village_Thumbnail.jpg">
-                        </div>
-                    </a>
-                            
-                           <a href="" class="shooterGame"> 
-                                <div id="csgoHtml" class="hoverGame boxSizing">
-                                <span class="nameElement pointer ">Serious Sam 4</span>
-                                <img class="  pointer imageBorder boxSizingGame"  src="image/serioussam4/serioussam4_thumbnail.jpg">
-                            </div>
-                        </a>
-        </div>
-                <div class="col-sm-4">
 
-                   <a href="" class="shooterGame"> 
-                       <div id="csgoHtml" class="hoverGame boxSizing">
-                        <span class="nameElement pointer">Counter Strike</span>
-                        <img class="  pointer imageBorder boxSizingGame"  src="image/cs16/cs_thumbnail.jpg">
+                <a href="/subPage/subPage_csgo.html" class="shooterGame">
+                    <div id="dbdHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer ">DOOM 2016</span>
+                        <img class="  pointer imageBorder boxSizingGame" src="image/doom2016/doom2016_thumbnail.jpg">
                     </div>
                 </a>
-                        
-                       <a href="" class="horrorGame"> 
-                           <div id="dbdHtml" class="hoverGame boxSizing">
-                            <span class="nameElement pointer">Dead By Daylight</span>
-                            <img class="  pointer imageBorder boxSizingGame"  src="image/dbd/dbd_thumbnail.jpg">
-                        </div>
-                    </a>
-                            
-                           <a href="" class="shooterGame"> 
-                               <div id="residentevilHtml" class="hoverGame boxSizing">
-                                <span class="nameElement pointer">Tom Clancy's Rainbow Six Siege</span>
-                                <img class="  pointer imageBorder boxSizingGame"  src="image/rainbowsix/rainbowsix_thumbnail.jpg">
-                            </div>
-                        </a>
-                                
-                                <a href="" class="shooterGame">
-                                    <div id="csgoHtml" class="hoverGame boxSizing">
-                                    <span class="nameElement pointer">Serious Sam 3</span>
-                                    <img class="  pointer imageBorder boxSizingGame"  src="image/serioussam3/serioussam3_thumbnail.jpg">
-                                </div>
-                            </a>
+
+                <a href="" class="horrorGame">
+                    <div id="residentevilHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer ">Resident Evil VIII: Village</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/residentev_village/residentev_village_Thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="shooterGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer ">Serious Sam 4</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/serioussam4/serioussam4_thumbnail.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+
+                <a href="" class="shooterGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">Counter Strike</span>
+                        <img class="  pointer imageBorder boxSizingGame" src="image/cs16/cs_thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="horrorGame">
+                    <div id="dbdHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">Dead By Daylight</span>
+                        <img class="  pointer imageBorder boxSizingGame" src="image/dbd/dbd_thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="shooterGame">
+                    <div id="residentevilHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">Tom Clancy's Rainbow Six Siege</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/rainbowsix/rainbowsix_thumbnail.jpg">
+                    </div>
+                </a>
+
+                <a href="" class="shooterGame">
+                    <div id="csgoHtml" class="hoverGame boxSizing">
+                        <span class="nameElement pointer">Serious Sam 3</span>
+                        <img class="  pointer imageBorder boxSizingGame"
+                            src="image/serioussam3/serioussam3_thumbnail.jpg">
+                    </div>
+                </a>
             </div>
             <hr class="bg-orange shrinkWidth">
-        <section class="d-flex mt-3"></section>
-        
-        </div>
-        
-      <div>
-  
+            <section class="d-flex mt-3"></section>
 
-<footer class="footerClassBottom">
- 
-  
-    <div class="">
-      
-      <div class="row pt-2 pl-3 footerBorder  bg-orange">
-        
-        <div class="col-md-4 ">
-         
-          <label class="footerClassFont ml-3">Bartosz Skrzydelski</label>
-            
+        </div>
+
+        <div>
+
+
+            <footer class="footerClassBottom">
+
+
+                <div class="">
+
+                    <div class="row pt-2 pl-3 footerBorder  bg-orange">
+
+                        <div class="col-md-4 ">
+
+                            <label class="footerClassFont ml-3">Bartosz Skrzydelski</label>
+
+                        </div>
+                        <div class="col-md-4"><label>
+                                <a class="footerClassFont ml-3" href="mailto:arcadam111@gmail.com">Contact me:
+                                    arcadam111@gmail.com</a>
+                            </label> </div>
+                        <div class="col-md-4  "><label>
+                                <a class="footerClassFont ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My
+                                    Github</a>
+                            </label></div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="scrollUp" class="p-1 bg-orange shadow text-dark">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+            </div>
+
+        </div>
     </div>
-    <div class="col-md-4"><label>
-            <a class="footerClassFont ml-3"href="mailto:arcadam111@gmail.com">Contact me: arcadam111@gmail.com</a>
-            </label> </div>
-            <div class="col-md-4  "><label>
-            <a class="footerClassFont ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My Github</a>
-            </label></div>
-        </div>
-        </div>
-</footer>
-
-        <div id="scrollUp" class="p-1 bg-orange shadow text-dark">
-            <i class="bi bi-arrow-up-circle-fill"></i>
-        </div>
-
-    </div>
-    </div>    
     <div class="loaderWrap">
         <span class="bubble1"><img src="image/loaderImage.png"></span>
     </div>
-    </body>
+</body>
+
 </html>
