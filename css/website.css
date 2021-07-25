@@ -70,6 +70,7 @@
     margin-top: auto;
     margin-left: -12px;
 }
+
 /*scroll up button*/
 #scrollUp {
     position: fixed;
@@ -78,18 +79,19 @@
     cursor: pointer;
     z-index: 1;
     transition: 0.5s;
-    width: 10%;
-    height: 10%;
-    margin-bottom: -3%;
+    margin-right: 2%;
+    
+    margin-bottom: 4%;
     text-align: center;
-    font-size: 30px;
+    font-size: 5ch;
     border: 3px solid #242222;
-    border-radius: 30%;
+    border-radius: 30px;
+    
 }
 /*scrollUp button when it's hovered*/
 #scrollUp:hover {
     background-color: #ffc252;
-    margin-bottom: -2%;
+    
 }
 /*Changes to all image children of hovergame*/
 .hoverGame>img {
