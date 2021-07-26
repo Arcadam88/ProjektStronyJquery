@@ -51,6 +51,7 @@ $(document).ready(function () {
             $('.drpdown').fadeOut(300);
         } else {
             $('.drpdown').fadeIn(300);
+            $('.loginForm').hide(500);
         };
     });
 });
