@@ -1,5 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+    font-family: 'Abel';
+    src: url(/fonts/Abel-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+
+.signUpLink{
+    color: darkgray;
+}
+
+.headerElement {
+    font-size: 10ch;
+    font-family: 'Abel';
+    color: white;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 425px) {
+    .headerElement {
+        font-size: 7ch;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink infinite 1s ease-in-out;
+}
 
 /*loading animation component, after "loader" (text slides down)*/
 @keyframes dlcTextAnimation {
@@ -54,7 +95,7 @@
     max-width: 70%;
     align-self: center;
     margin: auto;
-    animation: spin 1s ease-in-out;
+    animation: spin 0.75s ease-in-out;
     animation-iteration-count: 2;
 
 }
@@ -78,16 +119,18 @@
     margin-right: 2%;
     margin-bottom: 4%;
     text-align: center;
-    font-size: 5ch;
+    font-size: 4ch;
     border: 3px solid #242222;
-    border-radius: 30px;
-
+    border-radius: 10px;
+    width: 3.5%;
+    min-width: 60px;
+    padding-top: 30px;
+    display: none;
 }
 
 /*scrollUp button when it's hovered*/
 #scrollUp:hover {
-    background-color: #ffc252;
-
+    padding: 30px;
 }
 
 /*Changes to all image children of hovergame*/
@@ -101,8 +144,7 @@ html {
     transition: 0.5s;
     margin-bottom: 5%;
     max-width: 100%;
-    font-family: 'Noto Sans JP', sans-serif;
-
+    font-family: 'Roboto';
 }
 
 .bg-darkCustom {
@@ -142,7 +184,7 @@ html {
 
     max-width: 100%;
     min-width: 100%;
-
+    box-shadow: 0 0 1rem 0.1rem black;
     margin-top: 3%;
 }
 
@@ -158,7 +200,7 @@ html {
     border: solid 2px #242222;
     border-radius: 10px;
     font-size: 2.5ch;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;
     color: black;
     overflow: hidden;
 }
@@ -222,6 +264,12 @@ html {
     transition: 0.5s;
 }
 
+.loginFormButton:hover,
+.categoriesButton:hover {
+    padding-right: 3%;
+
+}
+
 .inputLogin {
     background-color: #242222;
     border-right: #242222;
@@ -244,7 +292,6 @@ html {
     padding: 2%;
     color: white;
     height: 80%;
-    font-family: 'Noto Sans JP', sans-serif;
     margin: auto;
 }
 
@@ -253,19 +300,16 @@ html {
     border-bottom: 1px orange solid;
     text-align: center;
     padding-bottom: 3%;
-    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*This button is used to turn on Login Form*/
 .loginFormButton {
-    font-family: 'Noto Sans JP', sans-serif;
     border: 0px solid white;
     border-radius: 3px;
     padding-left: 20%;
     padding: 0% 2%;
     background-color: orange;
     margin-top: 1%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.5s;
 }
 
@@ -290,15 +334,14 @@ html {
 .footerBorder {
     border: 2px solid #242222;
     border-radius: 10px;
-    font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
 }
 
-.drpdown {
+.dropdown {
     z-index: 1;
-    margin-left: -1%;
-    padding-left: 3%;
-    margin-top: 1%;
+    margin-left: -4%;
+    min-width: 12%;
+    margin-top: 0.1%;
     position: absolute;
     height: 17.5%;
     background: orange;
@@ -306,12 +349,19 @@ html {
     display: none;
     overflow: hidden;
     cursor: default;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     overflow: auto;
+    border-radius: 10px;
+    padding: 0.5% 0%;
+}
+
+.dropdownContent {
+    min-width: 100%;
+    padding-left: 30%;
 }
 
 .categoryTypeButton {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     font-size: 20px;
     position: relative;
     display: block;
@@ -321,7 +371,7 @@ html {
     margin-top: 5%;
     margin-left: -30%;
     padding-top: 10%;
-    background: orange;
+    background: rgb(255, 166, 0);
 
 }
 
@@ -333,7 +383,6 @@ html {
     padding: 0% 2%;
     background-color: orange;
     margin-top: 1%;
-    font-family: 'Noto Sans JP', sans-serif;
     transition: 0.5s;
     min-height: 56px;
 }
@@ -344,7 +393,13 @@ html {
     width: 75%;
     margin-left: 13.5%;
     left: 0;
+    margin-bottom: -40px;
+    transition: 0.5s;
+}
 
+.footerClassBottom:hover {
+    margin-bottom: 0px;
+    transition: 0.5s;
 }
 
 .footerClassFont {
