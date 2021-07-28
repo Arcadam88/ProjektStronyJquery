@@ -54,10 +54,13 @@
                         category
                     </span>
                 </button>
-                <div class="drpdown">
-                    <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
-                    <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
-                    <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
+                <div class="dropdown">
+
+                    <div class="dropdownContent">
+                        <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
+                        <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
+                        <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,12 +77,16 @@
                 <label>Your password</label>
                 <i class="bi bi-lock"></i>
                 <input type="password" class="inputLogin" placeholder="Password ">
-                <label>No account? Sign up here</label>
+                <label><a href="" class="signUpLink">No account? Sign up here</a></label>
                 <button type="submit" class="loginButton">Login</button>
             </div>
         </form>
         <div>
-            <p id="dlcText" class="display-2 text-light text-center">Choose your game first</p>
+            <header>
+                <p id="dlcText" class="headerElement">
+                    Choose your game first</p>
+            </header>
+
             <hr class="bg-orange">
             <div id="picture" class="row justify-content-center">
                 <!---games-->
@@ -176,28 +183,30 @@
             </div>
             <div>
                 <section class="d-flex mt-3"></section>
-                <footer class="footerClassBottom">
-                    <div class="">
-                        <div class="row pt-2 footerBorder  bg-orange">
-                            <div class="col-sm ">
-                                <div class=" ml-3">Bartosz Skrzydelski</div>
-                                <div>
-                                    <a class=" ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My
-                                        Github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <div id="scrollUp" class="p-1 bg-orange shadow text-dark">
-                    <i class="bi bi-arrow-up-circle-fill"></i>
-                </div>
+
+
             </div>
+        </div>
+        <div id="scrollUp" class="p-1 bg-orange shadow text-dark">
+            <i class="bi bi-arrow-up-circle-fill"></i>
         </div>
         <!--loading screen-->
         <div class="loaderWrap">
             <span class="bubble1"><img src="image/loaderImage.png"></span>
         </div>
+        <footer class="footerClassBottom">
+            <div class="">
+                <div class="row pt-2 footerBorder  bg-orange">
+                    <div class="col-sm ">
+                        <div class=" ml-3">Bartosz Skrzydelski</div>
+                        <div>
+                            <a class=" ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My
+                                Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
