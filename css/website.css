@@ -11,7 +11,12 @@
 .signUpLink{
     color: darkgray;
 }
-
+.customMarginFooter{
+    margin-left: -50px;
+}
+.footerLink{
+  color: rgb(73, 73, 73);
+}
 .headerElement {
     font-size: 10ch;
     font-family: 'Abel';
