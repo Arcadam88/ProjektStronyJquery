@@ -214,7 +214,6 @@ html {
     transition: 0.5s;
     background-color: orange;
     z-index: 1;
-
 }
 
 .hoverGame {
@@ -249,7 +248,7 @@ html {
 
 @media only screen and (max-width: 856px) {
     .loginForm {
-        width: 156px;
+        width: 200px;
     }
 
 }

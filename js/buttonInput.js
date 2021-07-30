@@ -1,16 +1,16 @@
 $(document).ready(function () //kiedy dokument będzie gotowy, załadowany funkcja może zostać załadowana
     {
         $("#dlcButton").click(function () {
-                $("#dlc").fadeIn(500); //wyświetla okno z elementem o id DLC
+                $("#dlc").slideDown(500); //wyświetla okno z elementem o id DLC
                 $("#info, #picture").fadeOut(500); //ukrywa okno z elementem o id info
             }),
             $("#infoButton").click(function () {
                 $("#dlc, #picture").fadeOut(500);
-                $("#info").fadeIn(500);
+                $("#info").slideDown(500);
             }),
             $("#pictureButton").click(function () {
                 $("#dlc, #dlcText, #info").fadeOut(500);
-                $("#picture").fadeIn(500);
+                $("#picture").slideDown(500);
             });
     });
 
