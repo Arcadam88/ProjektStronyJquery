@@ -2,7 +2,10 @@
     font-family: 'Abel';
     src: url(/fonts/Abel-Regular.ttf);
 }
-
+:root{
+    --clr-accent-400: hsl(142, 90%, 60%);
+    --clr-neutral-900: hsl(207, 19%, 9%);
+}
 @font-face {
     font-family: 'Roboto';
     src: url(/fonts/Roboto-Medium.ttf);
@@ -37,15 +40,27 @@
     padding: 5%;
     font-size: 3ch;
     background-color:#242222;
-    transition: 0.5s;
-    background: linear-gradient(to left, #242222 50%, orange 50%) right;
-    background-size: 200%;
-    transition: 0.5s ease-out;
+
     color: white;
     border-radius: 20px;
 }
 .navbar-item:hover{
     background-position: left;
+}
+.navbar-line{
+    transition: 0.5s;
+}
+.navbar-items:hover .navbar-line{
+    background-color:#242222;
+    transition: 0.5s;
+    background: linear-gradient(to left, var(--clr-accent-400) 50%, #242222 50% ) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 3px;
+    border-radius: 30px;
 }
 .signUpLink{
     color: darkgray;
