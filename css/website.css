@@ -7,7 +7,46 @@
     font-family: 'Roboto';
     src: url(/fonts/Roboto-Medium.ttf);
 }
-
+.navbar{
+  left: 0;
+  top: 0;
+  background-color: #242222;
+  width: 10%;
+  min-width: 150px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+.navbar-items-holder{
+    display: block; 
+    top: 0px;
+    height: 100%;
+    margin-right: 50px;
+    width: 100%;
+    margin-top: 100%;
+}
+.navbar-items{
+    padding-top: 20px;
+}
+.navbar-item{
+    position: relative;
+    width: 150px;
+    border: none;
+    padding: 5%;
+    font-size: 3ch;
+    background-color:#242222;
+    transition: 0.5s;
+    background: linear-gradient(to left, #242222 50%, orange 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+    color: white;
+    border-radius: 20px;
+}
+.navbar-item:hover{
+    background-position: left;
+}
 .signUpLink{
     color: darkgray;
 }
