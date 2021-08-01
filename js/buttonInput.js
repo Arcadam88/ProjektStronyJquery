@@ -86,3 +86,17 @@ $(window).scroll(function () {
         $('#scrollUp').hide(500);
     };
 });
+
+
+
+
+$(document).ready(function () 
+{
+    $('.navbar').hide();
+    $('#closeNavbarButton').click(function () {
+        $('.navbar').fadeOut(500);
+    }),
+    $('#openNavbarButton').click(function () {
+        $('.navbar').fadeIn(500);
+    })
+});
