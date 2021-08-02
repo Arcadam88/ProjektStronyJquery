@@ -39,6 +39,10 @@
     .headerElement {
         font-size: 7ch;
     }
+    .imageGallery img{
+        max-height: 200px;
+        min-height: 200px;
+    }
 }
 
 @keyframes blink {
@@ -181,22 +185,35 @@ html {
     .aboutGameText{
         font-size: 2ch;
     }
+    .imageGallery img{
+    min-height: 160px;
+    max-height: 160px;
+}
 }
 
+.imageGallery img{
+    height: 300px;
+}
 .pointer {
     cursor: pointer;
 }
 
-.csgoBackground {
+.indexBackground {
 
     background-image: url("../image/csgo/image_csgo1_Blur.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-
-
+.csgoBackground{
+    background-image: url("../image/csgo/image_csgo1_Blur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.crop{
+ clip-path: circle();
+}
 
 .boxSizingGame {
 
