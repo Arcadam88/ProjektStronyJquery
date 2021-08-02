@@ -79,10 +79,9 @@ window.onload = function () {
 
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-      if($('#scrollUp').is(":hidden"))
-        $('#scrollUp').slideDown(500)
-    } else if($('#scrollUp').is(":visible"))
-    { 
+        if ($('#scrollUp').is(":hidden"))
+            $('#scrollUp').slideDown(500)
+    } else if ($('#scrollUp').is(":visible")) {
         $('#scrollUp').hide(500);
     };
 });
@@ -90,13 +89,12 @@ $(window).scroll(function () {
 
 
 
-$(document).ready(function () 
-{
+$(document).ready(function () {
     $('.navbar').hide();
     $('#closeNavbarButton').click(function () {
-        $('.navbar').fadeOut(500);
-    }),
-    $('#openNavbarButton').click(function () {
-        $('.navbar').fadeIn(500);
-    })
+            $('.navbar').fadeOut(300);
+        }),
+        $('#openNavbarButton').click(function () {
+            $('.navbar').fadeIn(300);
+        })
 });

@@ -2,97 +2,31 @@
     font-family: 'Abel';
     src: url(/fonts/Abel-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url(/fonts/Roboto-Medium.ttf);
 }
-:root{
+
+:root {
     --clr-accent-400: hsl(142, 90%, 60%);
+    --clr-neutral-700: hsl(0, 3%, 14%);
     --clr-neutral-900: hsl(207, 19%, 9%);
 }
 
-.navbar{
-  left: 0;
-  top: 0;
-  background-color: #242222;
-  min-width: 220px;
-  height: 100%;
-  position: fixed;
-  overflow: hidden;
-  z-index: 3;
-}
-.navbar-items-holder{
-    display: block; 
-    top: 0px;
-    height: 100%;
-    
-    width: 100%;
-    margin-top: 75%;
-}
-.navbar-items{
-    padding-top: 20px;
-}
-.navbar-item{
-    position: relative;
-    width: 100%;
-    border: none;
-    padding: 5%;
-    font-size: 3ch;
-    background-color:#242222;
-    color: white;
-    text-align: center;
-}
-.navbar-item:hover{
-    background-position: left;
-}
-.navbar-line{
-    transition: 0.5s;
-}
-.navbar-items:hover .navbar-line{
-    background-color:#242222;
-    transition: 0.5s;
-    background: linear-gradient(to left, var(--clr-accent-400) 50%, #242222 50% ) right;
-    background-size: 200%;
-    transition: 0.5s ease-out;
-    color: white;
-    border-radius: 20px;
-    width: 100%;
-    padding-top: 3px;
-    border-radius: 30px;
-    width: 80%;
-    margin: auto;
-}
-.closeNavbarButton{
-color: white;
-position: absolute;
-top: 0px;
-right: 0;
-z-index: 3;
-cursor: pointer;
-}
-#openNavbarButton{
-    text-align: center;
-    left: 0;
-    top: 0;
-    border: 3px solid #242222;
-    border-radius: 10px;
-    z-index: 2;
-    position: fixed;
-    margin: 15px 0 0 15px;
-    padding: 5px 0 0 10px;
-    cursor: pointer;
-    background-color: orange;
-}
 
-.signUpLink{
+.signUpLink {
     color: darkgray;
 }
-.customMarginFooter{
+
+.customMarginFooter {
     margin-left: -50px;
 }
-.footerLink{
-  color: rgb(73, 73, 73);
+
+.footerLink {
+    color: rgb(73, 73, 73);
 }
+
 .headerElement {
     font-size: 10ch;
     font-family: 'Abel';
@@ -141,7 +75,7 @@ cursor: pointer;
     position: fixed;
     top: 0;
     left: 0;
-    background: #242222;
+    background: var(--clr-neutral-700);
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -201,7 +135,7 @@ cursor: pointer;
     margin-bottom: 4%;
     text-align: center;
     font-size: 4ch;
-    border: 3px solid #242222;
+    border: 3px solid var(--clr-neutral-700);
     border-radius: 10px;
     width: 3.5%;
     min-width: 60px;
@@ -216,7 +150,7 @@ cursor: pointer;
 
 /*Changes to all image children of hovergame*/
 .hoverGame>img {
-    border: 2px solid #242222;
+    border: 2px solid var(--clr-neutral-700);
     border-radius: 5px;
 }
 
@@ -229,21 +163,24 @@ html {
 }
 
 .bg-darkCustom {
-    background-color: #242222;
+    background-color: var(--clr-neutral-700);
 }
 
-.aboutGame {
-    font-size: 30px;
+.aboutGameText {
+    font-size: 3ch;
+    font-family: "Roboto", sans-serif;
+    white-space: none;
+    transform: scale(0.9);
+    color: white;
+    margin-top: 10%;
 }
-
-#logo {
-    filter: invert(1);
-}
-
-#menu {
-    height: 1%;
-    width: 5%;
-
+@media only screen and (max-width: 768px) {
+    #logo {
+        transform: scale(0.8);
+    }
+    .aboutGameText{
+        font-size: 2ch;
+    }
 }
 
 .pointer {
@@ -310,7 +247,7 @@ html {
     top: 0;
     position: fixed;
     z-index: 3;
-    background-color: #242222;
+    background: var(--clr-neutral-700);
     width: 20%;
     padding: 1%;
     margin-top: 6.5%;
@@ -329,6 +266,7 @@ html {
 
 }
 
+/*login components*/
 .loginButton {
     background-color: #ffa500;
     border: 1px black solid;
@@ -498,16 +436,13 @@ html {
 
 .material-icons.md-48 {
     font-size: 48px;
-    
+
 }
-.material-icons.md-30{
+
+.material-icons.md-30 {
     font-size: 30px;
     color: white;
     margin-right: 10px;
-}
-
-.m-auto {
-    margin-inline: auto;
 }
 
 ::-webkit-scrollbar {
