@@ -1,0 +1,74 @@
+.dlcCategoryText{
+    font-size: 10ch;
+    padding: 20px 0 0 50px;
+    font-family: 'abel', sans-serif;
+
+    text-align: center;
+}
+.dlcImageElement {
+    position: absolute;
+    text-align: center;
+    font-size: 7ch;
+    margin-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: 'abel', sans-serif;
+    transition: 0.5s;
+    z-index: -2;
+    letter-spacing: -3px;
+    word-spacing: -3px;
+}
+
+.hoverGame:hover .dlcImageElement {
+    margin-top: -10%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.dlcCategoryMove {
+    padding-top: 7.5%;
+}
+.imageGallery img{
+    height: 300px;
+}
+@media only screen and (max-width: 425px) {
+    .imageGallery img {
+        max-height: 200px;
+        min-height: 200px;
+    }
+    .dlcImageElement{
+    transform: scale(0.8);
+    width: 125%;
+    margin-left: -15%;     
+    }
+    .hoverGame:hover .dlcImageElement {
+        margin-top: -15%;   
+    }
+}
+@media only screen and (max-width: 768px) {
+    #logo {
+        transform: scale(0.5);
+    }
+    .aboutGameText{
+        font-size: 2ch;
+    }
+    .imageGallery img{
+    max-width: 200px;
+    }    
+    .dlcImageElement{
+        font-size: 3ch;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #logo {
+        transform: scale(0.8);
+    }
+    .aboutGameText{
+        font-size: 2ch;
+    }
+    .dlcImageElement{
+        font-size: 5ch;
+    }
+}
