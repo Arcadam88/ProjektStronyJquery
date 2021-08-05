@@ -98,3 +98,7 @@ $(document).ready(function () {
             $('.navbar').fadeIn(300);
         })
 });
+AOS.init({
+    duration: 1200,
+  })
+  

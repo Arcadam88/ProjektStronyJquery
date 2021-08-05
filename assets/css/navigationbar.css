@@ -2,11 +2,15 @@
     left: 0;
     top: 0;
     background: var(--clr-neutral-700);
+    border: 3px solid var(--clr-accent-500);
+    border-left: none;
+    border-radius: 10px;
     min-width: 220px;
     height: 100%;
     position: fixed;
     overflow: hidden;
     z-index: 3;
+    
 }
 
 .navbar-items-holder {
@@ -15,10 +19,11 @@
     height: 100%;
     width: 100%;
     margin-top: 75%;
+    
 }
 
 .navbar-items {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .navbar-item {
@@ -75,5 +80,5 @@
     margin: 15px 0 0 15px;
     padding: 5px 0 0 10px;
     cursor: pointer;
-    background-color: orange;
+    background-color: var(--clr-accent-500);
 }

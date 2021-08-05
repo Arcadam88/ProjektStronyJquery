@@ -10,7 +10,10 @@
 
 :root {
     --clr-accent-400: hsl(142, 90%, 60%);
-    --clr-neutral-700: hsl(0, 3%, 14%);
+    --clr-accent-500: hsl(280, 25%, 72%);
+    --clr-accent-600:  hsl(230, 40%, 14%);
+    --clr-neutral-700: hsl(244, 41%, 8%);
+    --clr-neutral-800: hsl(214, 13%, 20%);
     --clr-neutral-900: hsl(207, 19%, 9%);
 }
 @media only screen and (max-width: 2560px){
@@ -179,10 +182,12 @@ html {
     border: 2px solid var(--clr-neutral-700);
     border-radius: 5px;
 }
-
+.bg-dark1{
+    background: var(--clr-neutral-800);
+}
 
 .bg-darkCustom {
-    background-color: var(--clr-neutral-700);
+    background: linear-gradient(to right,var(--clr-neutral-800), var(--clr-accent-600), var(--clr-neutral-900));
 }
 
 .aboutGameText {
@@ -199,11 +204,7 @@ html {
 }
 
 .indexBackground {
-
-    background-image: url("../image/csgo/image_csgo1_Blur.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background: linear-gradient(to right,var(--clr-neutral-800), var(--clr-accent-600), var(--clr-neutral-900));
 }
 .csgoBackground{
     background-image: url("../image/csgo/image_csgo1_Blur.jpg");
@@ -240,7 +241,7 @@ html {
 
 .hoverGame:hover .nameElement {
     transition: 0.5s;
-    background-color: orange;
+    background-color: var(--clr-accent-500);
     z-index: 1;
 }
 
@@ -261,11 +262,11 @@ html {
     top: 0;
     position: fixed;
     z-index: 3;
-    background: var(--clr-neutral-700);
+    background: var(--clr-neutral-900);
     width: 20%;
     padding: 1%;
     margin-top: 6%;
-    border: #242222 solid 3px;
+    border: var(--clr-neutral-900) solid 3px;
     border-radius: 10%;
     overflow: auto;
     box-shadow: 5px 5px;
@@ -277,17 +278,18 @@ html {
 
 /*login components*/
 .loginButton {
-    background-color: #ffa500;
+    background-color: var(--clr-neutral-800);
     border: 1px black solid;
     width: 100%;
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     transition: 0.5s;
+    color: white;
 }
 
 .loginButton:hover,
 .loginFormButton:hover {
-    background-color: #ffc252;
+    background-color: var(--clr-accent-500);
     transition: 0.5s;
 }
 
@@ -298,33 +300,35 @@ html {
 }
 
 .inputLogin {
-    background-color: #242222;
+    background-color: var(--clr-neutral-800);
     border-right: #242222;
     border-bottom: white solid;
     border-radius: 3px;
     width: 100%;
     padding: 3%;
     margin-bottom: 5%;
+    
 }
 
-.inputLogin:focus {
-    background-color: orange;
+.inputLogin:focus{
+    background-color: var(--clr-accent-500);
     transition: 0.5s;
+    
 }
-
 .loginItems {
-    background-color: #242222;
+    background-color: var(--clr-neutral-900);
     width: 90%;
     margin-top: 1%;
     padding: 2%;
     color: white;
     height: 80%;
     margin: auto;
+    font-size: 2ch;
 }
 
 .loginFormFont {
-    color: orange;
-    border-bottom: 1px orange solid;
+    color: var(--clr-accent-500);
+    border-bottom: 1px var(--clr-accent-500) solid;
     text-align: center;
     padding-bottom: 3%;
 }
@@ -335,7 +339,7 @@ html {
     border-radius: 3px;
     padding-left: 20%;
     padding: 0% 2%;
-    background-color: orange;
+    background-color: var(--clr-neutral-800);
     margin-top: 1%;
     transition: 0.5s;
 }
@@ -350,18 +354,23 @@ html {
     border-radius: 30px;
     margin-right: auto;
     float: right;
+    background-color: var(--clr-accent-500);
 }
 
 .bg-orange {
     background-color: orange;
 }
-
+.bg-violet{
+    background: var(--clr-accent-500);
+}
 
 
 .footerBorder {
-    border: 2px solid #242222;
+    border: 2px solid var(--clr-neutral-800);
+    padding-left: 30px;
     border-radius: 10px;
     text-decoration: none;
+    background: var(--clr-accent-500);
 }
 
 .dropdown {
@@ -371,8 +380,8 @@ html {
     margin-top: 0.1%;
     position: absolute;
     height: 17.5%;
-    background: orange;
-    border: 2px solid #242222;
+    background: var(--clr-neutral-800);
+    border: 2px solid var(--clr-accent-500);
     display: none;
     overflow: hidden;
     cursor: default;
@@ -380,13 +389,16 @@ html {
     overflow: auto;
     border-radius: 10px;
     padding: 0.5% 0%;
+    margin-left: 4%;
 }
 
 .dropdownContent {
     min-width: 100%;
     padding-left: 30%;
 }
-
+.dropdownContent button:hover{
+    background: var(--clr-accent-500);
+}
 .categoryTypeButton {
     font-family: 'Roboto', 'sans-serif';
     font-size: 20px;
@@ -394,12 +406,12 @@ html {
     display: block;
     width: 120%;
     z-index: 2;
-    border: 2px solid;
+    border: 2px solid black;
     margin-top: 5%;
     margin-left: -30%;
     padding-top: 10%;
-    background: rgb(255, 166, 0);
-
+    background: var(--clr-neutral-800);
+    color: white;
 }
 
 .categoriesButton {
@@ -408,12 +420,14 @@ html {
     border-radius: 3px;
     padding-left: 20%;
     padding: 0% 2%;
-    background-color: orange;
+    background-color: var(--clr-neutral-800);
     margin-top: 1%;
     transition: 0.5s;
     min-height: 56px;
 }
-
+.categoriesButton:hover, .categoriesButton:hover button {
+    background-color: var(--clr-accent-500);
+}
 .footerClassBottom {
     bottom: 0;
     position: fixed;
@@ -445,7 +459,7 @@ html {
 
 .material-icons.md-48 {
     font-size: 48px;
-
+    color: white;
 }
 
 .material-icons.md-30 {
@@ -466,4 +480,7 @@ html {
 
 .shrinkWidth {
     max-width: 80%;
+}
+.shadow{
+    box-shadow: 0 0 1rem 0.1rem black;
 }
