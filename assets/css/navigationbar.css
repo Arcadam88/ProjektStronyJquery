@@ -10,9 +10,17 @@
     position: fixed;
     overflow: hidden;
     z-index: 3;
-    overflow: auto;
 }
-
+@media only screen and (max-height: 700px){
+    .navbar-items-holder{
+        margin-top: 25% !important;
+    }
+}
+@media only screen and (max-height: 590px){
+    .navbar-items-holder{
+        margin-top: 0% !important;
+    }
+}
 .navbar-items-holder {
     display: block;
     top: 0px;
@@ -81,4 +89,27 @@
     padding: 5px 0 0 10px;
     cursor: pointer;
     background-color: var(--clr-accent-500);
+}
+.slideshow{
+    max-width: 900px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    min-height: 458px;
+}
+.slide{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 70%;
+    transition: 0.5s;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.dlcHover{
+
 }

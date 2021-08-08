@@ -70,12 +70,12 @@ $(document).ready(function () {
         });
 });
 
-window.onload = function () {
+window.addEventListener('load', function(){
     setTimeout(function () {
         let x = document.querySelector('.loaderWrap')
         x.remove();
     }, 1500)
-}
+}) 
 
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
@@ -98,7 +98,26 @@ $(document).ready(function () {
             $('.navbar').fadeIn(300);
         })
 });
-AOS.init({
-    duration: 1200,
-  })
-  
+let i = 0;
+let images = [];
+
+
+images[0] = '../assets/image/csgo/image_csgo.webp'
+images[1] = '../assets/image/csgo/image_csgo1.webp'
+images[2] = '../assets/image/csgo/image_csgo2.webp'
+
+
+window.addEventListener('load', function changeImage(){  
+    document.slide.src = images[i];
+    if(i<images.length - 1){
+        i++;
+    }else{
+        i=0;
+    }
+    setTimeout(changeImage, 1000);
+    document.querySelector('.prev').onclick = function () {
+        if(i>0){
+            i--;
+        }
+    }
+})
