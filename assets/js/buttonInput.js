@@ -114,7 +114,7 @@ window.addEventListener('load', function changeImage(){
     }else{
         i=0;
     }
-    setTimeout(changeImage, 1000);
+    setTimeout(changeImage, 1500);
     document.querySelector('.prev').onclick = function () {
         if(i>0){
             i--;

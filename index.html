@@ -9,8 +9,7 @@
     <title>Projekt Strony jquery</title>
 
     <!--CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--bootstrap (never again)-->
@@ -28,7 +27,10 @@
 
 <body class="indexBackground">
 
-
+<!--loading screen-->
+<div class="loaderWrap">
+    <span class="bubble1"><img src="assets/image/loaderImage.webp"></span>
+</div>
 
     <div class="content container-fluid">
         <div class="loginFormButtonHolder container-fluid">
@@ -97,14 +99,14 @@
                     <a href="" class="horrorGame">
                         <div class="hoverGame ">
                             <span class="nameElement pointer">Resident Evil VII: Biohazard</span>
-                            <img class="  pointer imageBorder boxSizingGame"
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/residentev/residentev_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
                         <div class="hoverGame">
                             <span class="nameElement pointer">Grand Theft Auto: V</span>
-                            <img class="  pointer imageBorder boxSizingGame" src="assets/image/gtav/gtav_thumbnail.webp">
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame" src="assets/image/gtav/gtav_thumbnail.webp">
                         </div>
                     </a>
                 </div>
@@ -126,14 +128,14 @@
                     <a href="" class="horrorGame">
                         <div class="hoverGame">
                             <span class="nameElement pointer ">Resident Evil VIII: Village</span>
-                            <img class="  pointer imageBorder boxSizingGame"
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/residentev_village/residentev_village_Thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
                         <div class="hoverGame">
                             <span class="nameElement pointer ">Serious Sam 4</span>
-                            <img class="  pointer imageBorder boxSizingGame"
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/serioussam4/serioussam4_thumbnail.webp">
                         </div>
                     </a>
@@ -154,7 +156,7 @@
                     <a href="" class="shooterGame">
                         <div class="hoverGame">
                             <span class="nameElement pointer">Tom Clancy's Rainbow Six Siege</span>
-                            <img class="  pointer imageBorder boxSizingGame"
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/rainbowsix/rainbowsix_thumbnail.webp">
                         </div>
                     </a>
@@ -162,7 +164,7 @@
                         <div class="hoverGame">
                             <span class="nameElement pointer">Serious Sam 3</span>
                             <div>
-                                <img class="  pointer imageBorder boxSizingGame"
+                                <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                     src="assets/image/serioussam3/serioussam3_thumbnail.webp">
                             </div>
                         </div>
@@ -179,10 +181,6 @@
         </div>
         <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
             <i class="bi bi-arrow-up-circle-fill"></i>
-        </div>
-        <!--loading screen-->
-        <div class="loaderWrap">
-            <span class="bubble1"><img src="assets/image/loaderImage.png"></span>
         </div>
         <footer class="footerClassBottom shadow">
             <div class="">
