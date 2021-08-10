@@ -19,7 +19,6 @@
     <!---Custom JS-->
     <script src="../assets/js/buttonInput.js"></script>
     <script src="../assets/aos/aos.js"></script>
-
 </head>
 
 <body class="bg-darkCustom">
@@ -149,11 +148,11 @@
         </div>
         <hr class="bg-violet">
 
-        <div id="dlc" class="row justify-content-center">
+        <div id="dlc" data-aos="fade-up" class="row justify-content-center">
             <!---games-->
             <p class="text-light dlcCategoryText">DLC</p>
             <hr class="bg-violet shrinkWidth">
-            <div class="col-md-6 dlcCategoryMove">
+            <div data-aos="fade-up"class="col-md-6 dlcCategoryMove">
                 <div class="hoverGame " >
                      <div class="dlcImageElement text-light">Prime Status Upgrade</div>
                     <img loading="lazy" class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo_dlc.webp">
@@ -172,19 +171,19 @@
         <div id="images" class="row justify-content-center" >
             <!---games-->
             <div class="col-md-4">
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo.webp">
                     </div>
                 </div>
 
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo1.webp">
                     </div>
                 </div>
 
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo2.webp">
                     </div>
@@ -193,19 +192,19 @@
 
             </div>
             <div class="col-md-4">
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo3.webp">
                     </div>
                 </div>
 
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo4.webp">
                     </div>
                 </div>
 
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo8.webp">
                     </div>
@@ -213,33 +212,36 @@
             </div>
 
             <div class="col-md-4">
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
                         <img class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo5.webp">
                     </div>
                 </div>
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
 
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo6.webp">
                     </div>
                 </div>
-                <div class="imageGallery">
+                <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
                         <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo7.webp">
                     </div>
                 </div>
             </div>
 
-            <hr class="bg-violet shrinkWidth">
+            
             
         </div>
+        
         <div>
             <section class="d-flex mt-3"></section>
         </div>
     </div>
     <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
-        <i class="bi bi-arrow-up-circle-fill"></i>
+        <span class="material-icons">
+            expand_less
+            </span>
     </div>
     
     <footer class="footerClassBottom">
@@ -258,9 +260,13 @@
             </div>
         </div>
     </footer>
-    <div id="onScroll">ds</div>
     </div>
-
+    <script>
+        addEventListener('load', AOS.refresh)
+        AOS.init({
+            duration:2000,
+        });
+    </script>
 </body>
 
 </html>

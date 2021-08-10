@@ -180,7 +180,9 @@
             </div>
         </div>
         <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
-            <i class="bi bi-arrow-up-circle-fill"></i>
+            <span class="material-icons">
+                expand_less
+                </span>
         </div>
         <footer class="footerClassBottom shadow">
             <div class="">
@@ -200,7 +202,12 @@
         </footer>
     <div id="onScroll">ds</div>    
     </div>
-    
+    <script>
+        addEventListener('load', AOS.refresh)
+        AOS.init({
+            duration:2000,
+        });
+    </script>
 </body>
 
 </html>
