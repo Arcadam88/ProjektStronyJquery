@@ -90,26 +90,4 @@
     cursor: pointer;
     background-color: var(--clr-accent-500);
 }
-.slideshow{
-    max-width: 900px;
-    width: 90%;
-    background-color: white;
-    margin: auto;
-    display: flex;
-    
-}
-.slide{
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width: 70%;
-    transition: 0.5s;
-}
-.prev{
-    left: 0;
-}
-.next{
-    right: 0;
-}
-.dlcHover{
 
-}

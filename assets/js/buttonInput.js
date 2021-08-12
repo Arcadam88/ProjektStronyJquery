@@ -1,16 +1,13 @@
 $(document).ready(function () //kiedy dokument będzie gotowy, załadowany funkcja może zostać załadowana
     {
         $("#dlcButton").click(function () {
-                $("#dlc").slideDown(500); //wyświetla okno z elementem o id DLC
-                $("#info, #picture").fadeOut(500); //ukrywa okno z elementem o id info
+            document.querySelector("#dlc").scrollIntoView();
             }),
             $("#infoButton").click(function () {
-                $("#dlc, #picture").fadeOut(500);
-                $("#info").slideDown(500);
+            document.querySelector('#info').scrollIntoView();
             }),
-            $("#pictureButton").click(function () {
-                $("#dlc, #dlcText, #info").fadeOut(500);
-                $("#picture").slideDown(500);
+            $("#imagesButton").click(function () {
+            document.querySelector('#images').scrollIntoView();
             });
     });
 
@@ -35,10 +32,10 @@ $(document).ready(function () {
 // toggles loginForm class visibilty
 $(document).ready(function () {
     $("#loginFormButton, .closeLoginForm").click(function () {
-        if ($(".loginForm").is(":visible")) {
-            $(".loginForm").hide(500)
+        if ($(".loginForm, .loginFormSubpageEq").is(":visible")) {
+            $(".loginForm, .loginFormSubpageEq").hide(500)
         } else {
-            $(".loginForm").show(500)
+            $(".loginForm, .loginFormSubpageEq").show(500)
             $(".dropdown").fadeOut(500)
         }
     });
@@ -102,12 +99,18 @@ let i = 0;
 let images = [];
 
 
-images[0] = '../assets/image/csgo/image_csgo.webp'
-images[1] = '../assets/image/csgo/image_csgo1.webp'
-images[2] = '../assets/image/csgo/image_csgo2.webp'
-
-
-window.addEventListener('load', function changeImage(){  
+    images[0] = '../assets/image/csgo/image_csgo.webp'
+    images[1] = '../assets/image/csgo/image_csgo1.webp'
+    images[2] = '../assets/image/csgo/image_csgo2.webp'
+    images[3] = '../assets/image/csgo/image_csgo3.webp'
+    images[4] = '../assets/image/csgo/image_csgo4.webp'
+    images[5] = '../assets/image/csgo/image_csgo5.webp'
+    images[6] = '../assets/image/csgo/image_csgo6.webp'
+    images[7] = '../assets/image/csgo/image_csgo7.webp'
+  
+ 
+    
+  window.addEventListener('load', function changeImage(){  
     document.slide.src = images[i];
     if(i<images.length - 1){
         i++;
@@ -115,4 +118,6 @@ window.addEventListener('load', function changeImage(){
         i=0;
     }
     setTimeout(changeImage, 1500);
-})
+})  
+
+

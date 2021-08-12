@@ -72,3 +72,71 @@
         font-size: 5ch;
     }
 }
+
+.slideshow{
+    max-width: 900px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    min-height: 32rem;
+}
+.slide{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 70%;
+    transition: 0.5s;
+}
+.loginFormSubpageEq {
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    background: var(--clr-neutral-900);
+    width: 20%;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: var(--clr-neutral-900) solid 3px;
+    border-radius: 10%;
+    overflow: auto;
+    box-shadow: 5px 5px;
+    display: none;
+    min-width: 225px;
+}
+@media screen and (max-width: 2560px) {
+    .loginFormSubpageEq{
+    margin-left: 8.5% !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .loginFormSubpageEq{
+    margin-top: 70% !important;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .loginFormSubpageEq{
+    margin-top: 15% !important;
+    margin-left: 15% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .loginFormSubpageEq{
+    margin-top: 20% !important;
+    margin-left: 20% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .loginFormSubpageEq{
+    margin-top: 25% !important;
+    margin-left: 27.5% !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    .loginFormSubpageEq{
+    margin-top: 68% !important;
+    margin-left: 0% !important;
+    }
+    .slideshow{
+        min-height: 13rem
+    }
+}

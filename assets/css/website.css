@@ -3984,23 +3984,6 @@ html {
     letter-spacing: -3px;
 }
 
-
-@keyframes blink {
-
-    from,
-    to {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-.blink {
-    animation: blink infinite 1s ease-in-out;
-}
-
 /*loading animation component*/
 .loaderWrap {
     width: 100%;
@@ -4092,10 +4075,22 @@ html {
 }
 
 .bg-darkCustom {
-    background: linear-gradient(to right, var(--clr-neutral-800), var(--clr-accent-600), var(--clr-neutral-900));
+    background: linear-gradient(to right, var(--clr-neutral-800), var(--clr-accent-600), var(--clr-neutral-900), var(--clr-neutral-800));
+    background-size: 300%;
+    animation: gradient 15s infinite alternate;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-@keyframes identifier {}
 
 .aboutGameText {
     font-size: 3ch;
@@ -4112,13 +4107,6 @@ html {
 
 .indexBackground {
     background: linear-gradient(to right, var(--clr-neutral-800), var(--clr-accent-600), var(--clr-neutral-900));
-}
-
-.csgoBackground {
-    background-image: url("../image/csgo/image_csgo1_Blur.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 
@@ -4181,7 +4169,6 @@ html {
     display: none;
     min-width: 225px;
 }
-
 
 
 /*login components*/
