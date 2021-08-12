@@ -96,7 +96,7 @@
     background-color: white;
     margin: auto;
     display: flex;
-    min-height: 458px;
+    
 }
 .slide{
     flex-wrap: wrap;

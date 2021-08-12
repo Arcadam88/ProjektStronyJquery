@@ -7,30 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Bartosz Skrzydelski">
     <title>Projekt Strony jquery</title>
-
     <!--CSS-->
-    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--bootstrap (never again)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/website.css">
-    <link rel="stylesheet" href="assets/css/navigationbar.css">
-    <link rel='stylesheet' href="assets/css/subpage.css"> 
-    <!--Jquery, bootstrap js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!---Custom JS-->
-    <script src="assets/js/buttonInput.js"></script>
-    <script src="assets/aos/aos.js"></script>
+    <link rel='stylesheet' href="assets/aos/aos.css">
 </head>
 
 <body class="indexBackground">
 
-<!--loading screen-->
-<div class="loaderWrap">
-    <span class="bubble1"><img src="assets/image/loaderImage.webp"></span>
-</div>
+    <!--loading screen-->
+    <div class="loaderWrap">
+        <span class="bubble1"><img src="assets/image/loaderImage.webp"></span>
+    </div>
 
     <div class="content container-fluid">
         <div class="loginFormButtonHolder container-fluid">
@@ -45,16 +34,16 @@
                         category
                     </span>
                 </button>
-                </div>
-                <div class="dropdown">
+            </div>
+            <div class="dropdown">
 
-                    <div class="dropdownContent">
-                        <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
-                        <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
-                        <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
-                    </div>
+                <div class="dropdownContent">
+                    <button type="button" id="all" class="categoryTypeButton btn horror">All Games</button>
+                    <button type="button" id="shooter" class="categoryTypeButton btn shooter">Shooter</button>
+                    <button type="button" id="horror" class="categoryTypeButton btn horror">Horror</button>
                 </div>
-            
+            </div>
+
         </div>
         <form class="loginForm justify-content-center">
             <div class="loginItems">
@@ -84,56 +73,58 @@
                 <!---games-->
                 <div class="col-md-4">
                     <a href="subPage/subPage_csgo.html" class="shooterGame">
-                        <div class="hoverGame ">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame ">
                             <span class="nameElement pointer">Counter Strike: Global Offensive</span>
-                            <img class="  pointer imageBorder boxSizingGame" src="assets/image/csgo/image_csgo_dlc.webp">
+                            <img class="  pointer imageBorder boxSizingGame"
+                                src="assets/image/csgo/image_csgo_dlc.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
-                        <div class="hoverGame ">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame ">
                             <span class="nameElement pointer">DOOM Eternal</span>
                             <img class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/doom_eternal/doom_eternal_Thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="horrorGame">
-                        <div class="hoverGame ">
+                        <div data-aos="fade-up" class="hoverGame ">
                             <span class="nameElement pointer">Resident Evil VII: Biohazard</span>
                             <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/residentev/residentev_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" class="hoverGame">
                             <span class="nameElement pointer">Grand Theft Auto: V</span>
-                            <img loading="lazy" class="  pointer imageBorder boxSizingGame" src="assets/image/gtav/gtav_thumbnail.webp">
+                            <img loading="lazy" class="  pointer imageBorder boxSizingGame"
+                                src="assets/image/gtav/gtav_thumbnail.webp">
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="/subPage/subPage_csgo.html" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame">
                             <span class="nameElement pointer">Counter Strike: Source</span>
                             <img class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/cssource/cs_source_thumbnail.webp">
                         </div>
                     </a>
                     <a href="/subPage/subPage_csgo.html" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame">
                             <span class="nameElement pointer ">DOOM 2016</span>
                             <img class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/doom2016/doom2016_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="horrorGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" class="hoverGame">
                             <span class="nameElement pointer ">Resident Evil VIII: Village</span>
                             <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/residentev_village/residentev_village_Thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" class="hoverGame">
                             <span class="nameElement pointer ">Serious Sam 4</span>
                             <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/serioussam4/serioussam4_thumbnail.webp">
@@ -142,26 +133,26 @@
                 </div>
                 <div class="col-md-4">
                     <a href="" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame">
                             <span class="nameElement pointer">Counter Strike</span>
                             <img class="  pointer imageBorder boxSizingGame" src="assets/image/cs16/cs_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="horrorGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" data-aos-delay="1550" class="hoverGame">
                             <span class="nameElement pointer">Dead By Daylight</span>
                             <img class="  pointer imageBorder boxSizingGame" src="assets/image/dbd/dbd_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" class="hoverGame">
                             <span class="nameElement pointer">Tom Clancy's Rainbow Six Siege</span>
                             <img loading="lazy" class="  pointer imageBorder boxSizingGame"
                                 src="assets/image/rainbowsix/rainbowsix_thumbnail.webp">
                         </div>
                     </a>
                     <a href="" class="shooterGame">
-                        <div class="hoverGame">
+                        <div data-aos="fade-up" class="hoverGame">
                             <span class="nameElement pointer">Serious Sam 3</span>
                             <div>
                                 <img loading="lazy" class="  pointer imageBorder boxSizingGame"
@@ -170,7 +161,7 @@
                         </div>
                     </a>
                 </div>
-                <hr class="bg-violet shrinkWidth">
+                <hr class="bg-violet shrinkWidth mt-4">
 
             </div>
             <div>
@@ -182,7 +173,7 @@
         <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
             <span class="material-icons">
                 expand_less
-                </span>
+            </span>
         </div>
         <footer class="footerClassBottom shadow">
             <div class="">
@@ -195,17 +186,22 @@
                         </div>
                     </div>
                     <div class="mt-4 customMarginFooter">
-                            <a class="footerLink" href="mailto:arcadam111@gmail.com">Contact me</a>
-                        </div>
+                        <a class="footerLink" href="mailto:arcadam111@gmail.com">Contact me</a>
+                    </div>
                 </div>
             </div>
         </footer>
-    <div id="onScroll">ds</div>    
     </div>
+    <!--Jquery, bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!---Custom JS-->
+    <script src="../assets/js/buttonInput.js"></script>
+    <script src="../assets/aos/aos.js"></script>  
+    <!---AOS--> 
     <script>
         addEventListener('load', AOS.refresh)
         AOS.init({
-            duration:2000,
+            duration: 2000,
         });
     </script>
 </body>

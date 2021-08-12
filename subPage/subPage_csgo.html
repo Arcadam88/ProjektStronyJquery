@@ -7,27 +7,23 @@
     <title>Projekt Strony jquery</title>
 
     <!--CSS-->
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" href="../assets/css/website.css">
     <link rel="stylesheet" href="../assets/css/navigationbar.css">
-    <link rel='stylesheet' href="../assets/css/subpage.css"> 
-    <!--Jquery, bootstrap js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!---Custom JS-->
-    <script src="../assets/js/buttonInput.js"></script>
-    <script src="../assets/aos/aos.js"></script>
+    <link rel='stylesheet' href="../assets/css/subpage.css">
+    <link rel='stylesheet' href="../assets/aos/aos.css">
+
 </head>
 
 <body class="bg-darkCustom">
 
-<!--loading screen-->
-    <!---
-        <div class="loaderWrap">
-            <span class="bubble1"><img src="../assets/image/loaderImage.webploading="lazy""></span>
-        </div>-->
+    <!--loading screen-->
+
+    <div class="loaderWrap">
+        <span class="bubble1"><img src="../assets/image/loaderImage.webp"></span>
+    </div>
 
     <div class="content container-fluid">
         <div class="navbar">
@@ -97,11 +93,11 @@
                     menu
                 </span> </div>
             <header>
-                <p id="dlcText" class="headerElement">
+                <p id="dlcText" data-aos="fade-up" data-aos-delay="1550" class="headerElement">
                     Counter Strike: Global Offensive</p>
             </header>
 
-            <div id="info" class="row justify-content-center">
+            <div id="info" data-aos="fade-up" data-aos-delay="1550" class="row justify-content-center">
 
                 <div class="col-lg-4">
                     <div id="logo" class="shooterGame">
@@ -132,16 +128,16 @@
                 </div>
 
 
-            <hr class="bg-violet shrinkWidth">
+                <hr class="bg-violet shrinkWidth">
             </div>
-            
-            <div id="carousel" class=" justify-content-center">
-            <div class="slideshow">
-              <button class="prev">prev</button>
-                <img src="" alt="" name="slide" class="slide"> 
-                <button class="next">next</button>
 
-            </div>
+            <div id="carousel" data-aos="fade-up" class=" justify-content-center">
+                <div class="slideshow">
+
+                    <img src="" alt="" name="slide" class="slide">
+
+
+                </div>
 
             </div>
 
@@ -152,40 +148,44 @@
             <!---games-->
             <p class="text-light dlcCategoryText">DLC</p>
             <hr class="bg-violet shrinkWidth">
-            <div data-aos="fade-up"class="col-md-6 dlcCategoryMove">
-                <div class="hoverGame " >
-                     <div class="dlcImageElement text-light">Prime Status Upgrade</div>
-                    <img loading="lazy" class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo_dlc.webp">
-                   
+            <div data-aos="fade-up" class="col-md-6 dlcCategoryMove">
+                <div class="hoverGame ">
+                    <div class="dlcImageElement text-light">Prime Status Upgrade</div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/csgo/image_csgo_dlc.webp">
+
                 </div>
 
             </div>
-
+            <hr class="bg-violet" data-aos="fade-up">
 
         </div>
 
 
 
 
-        <hr class="bg-violet">
-        <div id="images" class="row justify-content-center" >
+
+        <div id="images" class="row justify-content-center">
             <!---games-->
             <div class="col-md-4">
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo.webp">
                     </div>
                 </div>
 
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo1.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo1.webp">
                     </div>
                 </div>
 
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame ">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo2.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo2.webp">
                     </div>
                 </div>
 
@@ -194,19 +194,22 @@
             <div class="col-md-4">
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo3.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo3.webp">
                     </div>
                 </div>
 
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo4.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo4.webp">
                     </div>
                 </div>
 
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo8.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo8.webp">
                     </div>
                 </div>
             </div>
@@ -220,20 +223,22 @@
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
 
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo6.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo6.webp">
                     </div>
                 </div>
                 <div data-aos="fade-up" class="imageGallery">
                     <div class="hoverGame">
-                        <img loading="lazy"class="imageBorder boxSizingGame" src="../assets/image/csgo/image_csgo7.webp">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/csgo/image_csgo7.webp">
                     </div>
                 </div>
             </div>
 
-            
-            
+
+
         </div>
-        
+
         <div>
             <section class="d-flex mt-3"></section>
         </div>
@@ -241,9 +246,9 @@
     <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
         <span class="material-icons">
             expand_less
-            </span>
+        </span>
     </div>
-    
+
     <footer class="footerClassBottom">
         <div class="">
             <div class=" pt-2 footerBorder d-flex bg-violet">
@@ -261,10 +266,18 @@
         </div>
     </footer>
     </div>
+   
+
+    <!--Jquery, bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!---Custom JS-->
+    <script src="../assets/js/buttonInput.js"></script>
+    <script src="../assets/aos/aos.js"></script>  
+    <!---AOS--> 
     <script>
         addEventListener('load', AOS.refresh)
         AOS.init({
-            duration:2000,
+            duration: 2000,
         });
     </script>
 </body>

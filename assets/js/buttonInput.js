@@ -74,7 +74,7 @@ window.addEventListener('load', function(){
     setTimeout(function () {
         let x = document.querySelector('.loaderWrap')
         x.remove();
-    }, 1500)
+    }, 1700)
 }) 
 
 $(window).scroll(function () {
@@ -115,9 +115,4 @@ window.addEventListener('load', function changeImage(){
         i=0;
     }
     setTimeout(changeImage, 1500);
-    document.querySelector('.prev').onclick = function () {
-        if(i>0){
-            i--;
-        }
-    }
 })
