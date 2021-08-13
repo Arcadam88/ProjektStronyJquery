@@ -1,3 +1,4 @@
+
 .dlcCategoryText{
     font-size: 10ch;
    
@@ -5,6 +6,7 @@
     
     text-align: center;
 }
+
 .dlcImageElement {
     position: absolute;
     text-align: center;
@@ -19,7 +21,19 @@
     letter-spacing: -3px;
     word-spacing: -3px;
 }
-
+.hoverdlc{
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+.hoverdlc:hover{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.hoverdlc:hover .dlcImageElement {
+    margin-top: -10%;
+    transition: 0.5s;
+    z-index: 2;
+}
 .hoverGame:hover .dlcImageElement {
     margin-top: -10%;
     transition: 0.5s;
