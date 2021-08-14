@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projekt Strony jquery</title>
+
+    <!--CSS-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../assets/css/website.css">
+    <link rel='stylesheet' href="../assets/css/subpage.css">
+    <link rel='stylesheet' href="../assets/aos/aos.css">
+
+</head>
+
+<body class="bg-darkCustom">
+
+    <!--loading screen-->
+
+    <div class="loaderWrap">
+        <span class="bubble1"><img src="../assets/image/loaderImage.webp"></span>
+    </div>
+
+    <div class="content container-fluid">
+        <div class="navbar">
+            <div class="navbar-items-holder">
+                <div id="closeNavbarButton" class="closeNavbarButton">
+                    <span class="material-icons md-30">
+                        close
+                    </span></div>
+
+                <div>
+                    <div class="navbar-items"><button id="loginFormButton" class="navbar-item ">
+                            <span class="material-icons md-30">account_circle </span>
+                            Login</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div class="navbar-items">
+                        <a href="../index.html">
+                            <button class="navbar-item">
+                                <span class="material-icons md-30">
+                                    games
+                                </span>Games</button>
+                        </a>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="infoButton" class="navbar-items"><button class="navbar-item ">
+                            <span class="material-icons md-30">
+                                info
+                            </span>
+                            What is it?</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="dlcButton" class="navbar-items"><button class="navbar-item"><span
+                                class="material-icons md-30">
+                                paid
+                            </span>DLC</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="imagesButton" class="navbar-items"><button class="navbar-item">
+                            <span class="material-icons md-30">
+                                image
+                            </span>Images</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <form class="loginFormSubpageEq justify-content-center">
+            <div class="loginItems">
+                <button type="button" class="closeLoginForm bg-violet">
+                    <span class="material-icons">
+                        close</span>
+                </button>
+                <!--To do: Login with php-->
+                <p class="h4 loginFormFont">Login form</p>
+                <label>Your email</label>
+                <i class="bi bi-envelope"></i><input type="email" class="inputLogin" placeholder="Email">
+                <label>Your password</label>
+                <i class="bi bi-lock"></i>
+                <input type="password" class="inputLogin" placeholder="Password ">
+                <label><a href="" class="signUpLink">No account? Sign up here</a></label>
+                <button type="submit" class="loginButton">Login</button>
+            </div>
+        </form>
+        <div>
+
+
+            <div id="openNavbarButton">
+                <span class="material-icons md-30 text-dark">
+                    menu
+                </span> </div>
+            <header>
+                <p id="dlcText" data-aos="fade-up" data-aos-delay="1550" class="headerElement">
+                    Dead By Daylight</p>
+            </header>
+
+            <div id="info" data-aos="fade-up" data-aos-delay="1550" class="row justify-content-center">
+
+                <div class="col-lg-4">
+                    <div id="logo" class="shooterGame">
+                        <div class="hoverGame">
+
+                            <img class="imageBorder boxSizingGame" src="../assets/image/dbd/dbd_thumbnail.webp">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="info" class="col-lg-6">
+
+                    <div>
+
+                        <p class="aboutGameText">
+                            Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being caught and killed.</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <hr class="bg-violet shrinkWidth">
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="1500" id="carousel" data-aos="fade-up"
+                class=" justify-content-center">
+                <div class="slideshow hoverdlc slide-lower-size">
+
+                    <img src="" alt="" name="slideDbd" class="slide">
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="bg-violet">
+
+        <div id="dlc" data-aos="fade-up" class="row justify-content-center">
+            <!---games-->
+            <p class="text-light dlcCategoryText">DLC</p>
+            
+            <div data-aos="fade-up" class="col-md-6 dlcCategoryMove">
+                <div data-aos="zoom-in"class="hoverdlc ">
+                    <div class="dlcImageElement text-light">
+                        Resident Evil Chapter
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_1.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Survivor Expansion Pack
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_2.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Killer Expansion Pack
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_3.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Stranger Things Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_10.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Ghost Face®
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_11.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Ash vs Evil Dead
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_12.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        The Halloween® Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_13.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        A Nightmare on Elm Street™
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_14.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Shattered Bloodline Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_18.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Darkness Among Us Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_19.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Curtain Call Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_20.webp">
+
+                </div>
+
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        The 80's Suitcase
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_27.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        The Bloodstained Sack
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_28.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Headcase
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_29.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Original Soundtrack
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_30.webp">
+
+                </div>
+              
+                  
+
+            </div>
+            <div data-aos="fade-up" class="col-md-6 dlcCategoryMove ">
+                <div data-aos="zoom-in"class="hoverdlc ">
+                    <div class="dlcImageElement text-light">
+                        All-Kill Chapter
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_4.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        A Binding of Kin Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_5.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Descend Beyond chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_6.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Silent Hill Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_7.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Chains of Hate Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_8.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Cursed Legacy Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_9.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        the Saw® Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_15.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Leatherface™
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_16.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Demise of the Faithful chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_17.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Spark of Madness Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_21.webp">
+
+                </div>
+
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Of Flesh and Mud Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_22.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        A Lullaby for the Dark Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_23.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        The Last Breath Chapter
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_24.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Left Behind
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_25.webp">
+
+                </div>
+                <div data-aos="zoom-in"class="hoverdlc mt-6">
+                    <div class="dlcImageElement text-light">
+                        Charity Case
+
+                    </div>
+                    <img loading="lazy" class="imageBorder boxSizingGame"
+                        src="../assets/image/dbd/dbd_dlc_26.webp">
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <hr class="bg-violet" data-aos="fade-up">
+
+        </div>
+
+
+
+
+
+        <div id="images" class="row justify-content-center">
+            <!---games-->
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_1.webp">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_2.webp">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_3.webp">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_4.webp">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_5.webp">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_6.webp">
+                    </div>
+                </div>
+
+           
+            </div>
+
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img class="imageBorder boxSizingGame" 
+                        src="../assets/image/dbd/dbd_7.webp">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_8.webp">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/dbd/dbd_9.webp">
+                    </div>
+                </div>
+      
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <section class="d-flex mt-3"></section>
+        </div>
+    </div>
+    <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
+        <span class="material-icons">
+            expand_less
+        </span>
+    </div>
+
+    <footer class="footerClassBottom">
+        <div class="">
+            <div class=" pt-2 footerBorder d-flex bg-violet">
+                <div class="">
+                    <div class="ml-4">Bartosz Skrzydelski</div>
+                    <div>
+                        <a class="footerLink ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My
+                            Github</a>
+                    </div>
+                </div>
+                <div class="mt-4 customMarginFooter">
+                    <a class="footerLink" href="mailto:arcadam111@gmail.com">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <!--Jquery, bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!---Custom JS-->
+    <script src="../assets/js/buttonInput.js"></script>
+    <script src="../assets/aos/aos.js"></script>
+    <!---AOS-->
+    <script>
+        addEventListener('load', AOS.refresh)
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+</body>
+
+</html>

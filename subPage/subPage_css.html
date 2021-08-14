@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projekt Strony jquery</title>
+
+    <!--CSS-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../assets/css/website.css">
+    <link rel='stylesheet' href="../assets/css/subpage.css">
+    <link rel='stylesheet' href="../assets/aos/aos.css">
+
+</head>
+
+<body class="bg-darkCustom">
+
+    <!--loading screen-->
+
+    <div class="loaderWrap">
+        <span class="bubble1"><img src="../assets/image/loaderImage.webp"></span>
+    </div>
+
+    <div class="content container-fluid">
+        <div class="navbar">
+            <div class="navbar-items-holder">
+                <div id="closeNavbarButton" class="closeNavbarButton">
+                    <span class="material-icons md-30">
+                        close
+                    </span></div>
+
+                <div>
+                    <div class="navbar-items"><button id="loginFormButton" class="navbar-item ">
+                            <span class="material-icons md-30">account_circle </span>
+                            Login</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div class="navbar-items">
+                        <a href="../index.html">
+                            <button class="navbar-item">
+                                <span class="material-icons md-30">
+                                    games
+                                </span>Games</button>
+                        </a>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="infoButton" class="navbar-items"><button class="navbar-item ">
+                            <span class="material-icons md-30">
+                                info
+                            </span>
+                            What is it?</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="dlcButton" class="navbar-items"><button class="navbar-item"><span
+                                class="material-icons md-30">
+                                paid
+                            </span>DLC</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                    <div id="imagesButton" class="navbar-items"><button class="navbar-item">
+                            <span class="material-icons md-30">
+                                image
+                            </span>Images</button>
+                        <div class="navbar-line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <form class="loginFormSubpageEq justify-content-center">
+            <div class="loginItems">
+                <button type="button" class="closeLoginForm bg-violet">
+                    <span class="material-icons">
+                        close</span>
+                </button>
+                <!--To do: Login with php-->
+                <p class="h4 loginFormFont">Login form</p>
+                <label>Your email</label>
+                <i class="bi bi-envelope"></i><input type="email" class="inputLogin" placeholder="Email">
+                <label>Your password</label>
+                <i class="bi bi-lock"></i>
+                <input type="password" class="inputLogin" placeholder="Password ">
+                <label><a href="" class="signUpLink">No account? Sign up here</a></label>
+                <button type="submit" class="loginButton">Login</button>
+            </div>
+        </form>
+        <div>
+
+
+            <div id="openNavbarButton">
+                <span class="material-icons md-30 text-dark">
+                    menu
+                </span> </div>
+            <header>
+                <p id="dlcText" data-aos="fade-up" data-aos-delay="1550" class="headerElement">
+                    Counter Strike: Source</p>
+            </header>
+
+            <div id="info" data-aos="fade-up" data-aos-delay="1550" class="row justify-content-center">
+
+                <div class="col-lg-4">
+                    <div id="logo" class="shooterGame">
+                        <div class="hoverGame">
+
+                            <img class="imageBorder boxSizingGame" src="../assets/image/cssource/cs_source_thumbnail.webp">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div id="info" class="col-lg-6">
+
+                    <div>
+
+                        <p class="aboutGameText">
+                            Counter-Strike: Source blends Counter-Strike's award-winning 
+                            teamplay action with the advanced technology of Source™ technology.</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <hr class="bg-violet shrinkWidth">
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="1500" id="carousel" data-aos="fade-up"
+                class=" justify-content-center">
+                <div class="slideshow hoverdlc slide-lower-size">
+
+                    <img src="" alt="" name="slideCss" class="slide">
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr class="bg-violet">
+
+        <div id="dlc" data-aos="fade-up" class="row justify-content-center">
+            <!---games-->
+            <p class="text-light dlcCategoryText">DLC</p>
+            
+            <div data-aos="fade-up" class="col-md-6 dlcCategoryMove">
+                
+
+                </div>
+
+            </div>
+            <hr class="bg-violet" data-aos="fade-up">
+
+        </div>
+
+
+
+
+
+        <div id="images" class="row justify-content-center">
+            <!---games-->
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/cssource/cs_source_1.webp">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame ">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/cssource/cs_source_2.webp">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/cssource/cs_source_3.webp">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/cssource/cs_source_4.webp">
+                    </div>
+                </div>
+
+           
+            </div>
+
+            <div class="col-md-4">
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+                        <img class="imageBorder boxSizingGame" 
+                        src="../assets/image/cssource/cs_source_5.webp">
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="imageGallery">
+                    <div class="hoverGame">
+
+                        <img loading="lazy" class="imageBorder boxSizingGame"
+                            src="../assets/image/cssource/cs_source_thumbnail.webp">
+                    </div>
+                </div>
+      
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <section class="d-flex mt-3"></section>
+        </div>
+    </div>
+    <div id="scrollUp" class="p-1 bg-violet shadow text-dark">
+        <span class="material-icons">
+            expand_less
+        </span>
+    </div>
+
+    <footer class="footerClassBottom">
+        <div class="">
+            <div class=" pt-2 footerBorder d-flex bg-violet">
+                <div class="">
+                    <div class="ml-4">Bartosz Skrzydelski</div>
+                    <div>
+                        <a class="footerLink ml-3" href="https://github.com/BrtSkr/ProjektStronyJquery">My
+                            Github</a>
+                    </div>
+                </div>
+                <div class="mt-4 customMarginFooter">
+                    <a class="footerLink" href="mailto:arcadam111@gmail.com">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <!--Jquery, bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!---Custom JS-->
+    <script src="../assets/js/buttonInput.js"></script>
+    <script src="../assets/aos/aos.js"></script>
+    <!---AOS-->
+    <script>
+        addEventListener('load', AOS.refresh)
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+</body>
+
+</html>

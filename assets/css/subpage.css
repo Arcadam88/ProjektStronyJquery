@@ -1,10 +1,32 @@
-
-.dlcCategoryText{
+.dlcCategoryText {
     font-size: 10ch;
-   
+
     font-family: 'abel', sans-serif;
-    
+
     text-align: center;
+}
+
+.short-dlc-text {
+    position: absolute;
+    text-align: center;
+    font-size: 5ch;
+    margin-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: 'abel', sans-serif;
+    transition: 0.5s;
+    z-index: -2;
+    letter-spacing: -3px;
+    word-spacing: -3px;
+}
+
+.slide-lower-size {
+    transform: scale(0.8) !important;
+}
+
+.mt-6 {
+    margin-top: 6rem;
 }
 
 .dlcImageElement {
@@ -20,74 +42,93 @@
     z-index: -2;
     letter-spacing: -3px;
     word-spacing: -3px;
+    border-radius: 15px;
 }
-.hoverdlc{
+
+.hoverdlc {
     transition: 0.5s;
-    transform: scale(0.95);
+    transform: scale(0.95) !important;
 }
-.hoverdlc:hover{
-    transform: scale(1);
+
+.hoverdlc:hover {
+    transform: scale(1) !important;
     transition: 0.5s;
 }
+
 .hoverdlc:hover .dlcImageElement {
-    margin-top: -10%;
-    transition: 0.5s;
-    z-index: 2;
-}
-.hoverGame:hover .dlcImageElement {
-    margin-top: -10%;
+    margin-top: -13%;
     transition: 0.5s;
     z-index: 2;
 }
 
+.hoverGame:hover .dlcImageElement {
+    margin-top: -13%;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+
 .dlcCategoryMove {
     padding-top: 7.5%;
 }
-.imageGallery img{
+
+.imageGallery img {
     height: 300px;
 }
+
 @media only screen and (max-width: 425px) {
     .imageGallery img {
         max-height: 200px;
         min-height: 200px;
     }
-    .dlcImageElement{
-    transform: scale(0.8);
-    width: 125%;
-    margin-left: -15%;     
+
+    .dlcImageElement {
+        transform: scale(0.8);
+        width: 125%;
+        margin-left: -15%;
     }
+
     .hoverGame:hover .dlcImageElement {
-        margin-top: -15%;   
+        margin-top: -15%;
     }
 }
+
 @media only screen and (max-width: 768px) {
     #logo {
         transform: scale(0.5);
     }
-    .aboutGameText{
+
+    .aboutGameText {
         font-size: 2ch;
     }
-    .imageGallery img{
-    max-width: 200px;
-    }    
-    .dlcImageElement{
+
+    .imageGallery img {
+        max-width: 200px;
+    }
+
+    .dlcImageElement {
         font-size: 3ch;
     }
+  
 }
 
 @media only screen and (max-width: 1024px) {
     #logo {
         transform: scale(0.8);
     }
-    .aboutGameText{
+
+    .aboutGameText {
         font-size: 2ch;
     }
-    .dlcImageElement{
+
+    .dlcImageElement {
         font-size: 5ch;
     }
+   
 }
 
-.slideshow{
+.slideshow {
     max-width: 900px;
     width: 90%;
     background-color: white;
@@ -95,12 +136,14 @@
     display: flex;
     min-height: 32rem;
 }
-.slide{
+
+.slide {
     flex-wrap: wrap;
     flex-grow: 1;
     width: 70%;
     transition: 0.5s;
 }
+
 .loginFormSubpageEq {
     top: 0;
     position: fixed;
@@ -117,40 +160,147 @@
     display: none;
     min-width: 225px;
 }
+
 @media screen and (max-width: 2560px) {
-    .loginFormSubpageEq{
-    margin-left: 8.5% !important;
+    .loginFormSubpageEq {
+        margin-left: 8.5% !important;
     }
 }
+
 @media screen and (max-width: 320px) {
-    .loginFormSubpageEq{
-    margin-top: 70% !important;
+    .loginFormSubpageEq {
+        margin-top: 70% !important;
     }
 }
+
 @media screen and (max-width: 1440px) {
-    .loginFormSubpageEq{
-    margin-top: 15% !important;
-    margin-left: 15% !important;
+    .loginFormSubpageEq {
+        margin-top: 15% !important;
+        margin-left: 15% !important;
     }
 }
+
 @media screen and (max-width: 1024px) {
-    .loginFormSubpageEq{
-    margin-top: 20% !important;
-    margin-left: 20% !important;
+    .loginFormSubpageEq {
+        margin-top: 20% !important;
+        margin-left: 20% !important;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .loginFormSubpageEq{
-    margin-top: 25% !important;
-    margin-left: 27.5% !important;
+    .loginFormSubpageEq {
+        margin-top: 25% !important;
+        margin-left: 27.5% !important;
     }
 }
+
 @media screen and (max-width: 425px) {
-    .loginFormSubpageEq{
-    margin-top: 68% !important;
-    margin-left: 0% !important;
+    .loginFormSubpageEq {
+        margin-top: 68% !important;
+        margin-left: 0% !important;
     }
-    .slideshow{
+
+    .slideshow {
         min-height: 13rem
     }
+}
+
+html {
+    max-width: 99%;
+}
+
+.navbar {
+    left: 0;
+    top: 0;
+    background: var(--clr-neutral-700);
+    border: 3px solid var(--clr-accent-500);
+    border-left: none;
+    border-radius: 10px;
+    min-width: 220px;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3;
+}
+
+@media only screen and (max-height: 700px) {
+    .navbar-items-holder {
+        margin-top: 25% !important;
+    }
+}
+
+@media only screen and (max-height: 590px) {
+    .navbar-items-holder {
+        margin-top: 0% !important;
+    }
+}
+
+.navbar-items-holder {
+    display: block;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    margin-top: 75%;
+
+}
+
+.navbar-items {
+    padding-top: 40px;
+}
+
+.navbar-item {
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 5%;
+    font-size: 3ch;
+    background: var(--clr-neutral-700);
+    color: white;
+    text-align: center;
+}
+
+.navbar-item:hover {
+    background-position: left;
+}
+
+.navbar-line {
+    transition: 0.5s;
+}
+
+.navbar-items:hover .navbar-line {
+    background: var(--clr-neutral-700);
+    transition: 0.5s;
+    background: linear-gradient(to left, var(--clr-accent-400) 50%, #242222 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding-top: 3px;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.closeNavbarButton {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#openNavbarButton {
+    text-align: center;
+    left: 0;
+    top: 0;
+    border: 3px solid var(--clr-neutral-700);
+    border-radius: 10px;
+    z-index: 2;
+    position: fixed;
+    margin: 15px 0 0 15px;
+    padding: 5px 0 0 10px;
+    cursor: pointer;
+    background-color: var(--clr-accent-500);
 }
