@@ -66,7 +66,10 @@
     transition: 0.5s;
     z-index: 2;
 }
-
+.aboutGameTextLower{
+    font-size: 1.5rem;
+    color: white;
+}
 
 
 .dlcCategoryMove {
@@ -102,7 +105,9 @@
     .aboutGameText {
         font-size: 2ch;
     }
-
+    .aboutGameTextLower{
+        font-size: 1rem;
+    }
     .imageGallery img {
         max-width: 200px;
     }
@@ -121,7 +126,9 @@
     .aboutGameText {
         font-size: 2ch;
     }
-
+    .aboutGameTextLower{
+        font-size: 1rem;
+    }
     .dlcImageElement {
         font-size: 5ch;
     }
@@ -232,6 +239,11 @@ html {
 @media only screen and (max-height: 590px) {
     .navbar-items-holder {
         margin-top: 0% !important;
+    }
+}
+@media only screen and (max-height: 496px) {
+    .navbar-items-holder {
+        overflow: auto !important;
     }
 }
 
